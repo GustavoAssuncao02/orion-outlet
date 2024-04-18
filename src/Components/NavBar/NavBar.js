@@ -1,5 +1,4 @@
 import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from "../../Assets/Images/logo.png"
 import cart from "../../Assets/Images/Cart.png"
 import Search from "../../Assets/Images/search.png"
