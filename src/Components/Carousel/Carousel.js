@@ -1,4 +1,7 @@
 import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 
 function Carousel() {
     return (
@@ -14,13 +17,13 @@ function Carousel() {
                         <div class="container text-center">
                             <div class="row align-items-start">
                                 <div class="col">
-                                    1
+                                    One of three columns
                                 </div>
                                 <div class="col">
-                                    2
+                                    One of three columns
                                 </div>
                                 <div class="col">
-                                    3
+                                    One of three columns
                                 </div>
                             </div>
                         </div>
@@ -43,7 +46,7 @@ function Carousel() {
                     </div>
 
                     <div class="item">
-                        <div class="container text-center">
+                    <div class="container text-center">
                             <div class="row align-items-start">
                                 <div class="col">
                                     One of three columns
@@ -58,6 +61,7 @@ function Carousel() {
                         </div>
                     </div>
                 </div>
+
                 <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left"></span>
                     <span class="sr-only">Previous</span>
