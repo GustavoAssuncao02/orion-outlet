@@ -11,15 +11,51 @@ function Carousel() {
                 </ol>
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img src="la.jpg" alt="Los Angeles"/>
+                        <div class="container text-center">
+                            <div class="row align-items-start">
+                                <div class="col">
+                                    1
+                                </div>
+                                <div class="col">
+                                    2
+                                </div>
+                                <div class="col">
+                                    3
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="item">
-                        <img src="chicago.jpg" alt="Chicago"/>
+                        <div class="container text-center">
+                            <div class="row align-items-start">
+                                <div class="col">
+                                    One of three columns
+                                </div>
+                                <div class="col">
+                                    One of three columns
+                                </div>
+                                <div class="col">
+                                    One of three columns
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="item">
-                        <img src="ny.jpg" alt="New York"/>
+                        <div class="container text-center">
+                            <div class="row align-items-start">
+                                <div class="col">
+                                    One of three columns
+                                </div>
+                                <div class="col">
+                                    One of three columns
+                                </div>
+                                <div class="col">
+                                    One of three columns
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <a class="left carousel-control" href="#myCarousel" data-slide="prev">
