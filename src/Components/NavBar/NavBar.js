@@ -6,12 +6,12 @@ import Styles from "../NavBar/NavBar.css"
 function NavBar() {
     return (
         <div>
-            <nav class="navbar bg-black col-12 navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="navbar-brand d-flex justify-content align-items-center  w-100">
+            <nav class="navbar bg-black col-12 navbar-expand-lg ">
+                <div class="container-fluid col-12">
+                    <a class="navbar-brand d-flex justify-content-between align-items-center  w-100 col-12">
                         <img src={logo} alt="Logo" width="110" height="76" class="d-inline-block align-text-top" />
-                        <div class="col-4">
-                        <form class="d-flex" role="search">
+                        <div class="col-4 bg-">
+                        <form class="d-flex bg-searchBar" role="search">
                             <input class="form-control " type="search" placeholder="Digite o que você procura" aria-label="Search" />
                             <img src={Search} alt="Search" width="40"/>
                         </form>
