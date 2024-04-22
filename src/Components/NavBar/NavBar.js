@@ -13,7 +13,7 @@ function NavBar() {
                     <a class="navbar-brand d-flex justify-content-between align-items-center  w-100 col-12 ">
                         <img src={logo} alt="Logo" width="110" height="76" class="d-inline-block align-text-top" />
                         <div class="col-4 bg-">
-                            <form class="d-flex bg-dark rounded p-1" role="search">
+                            <form id="search-items"class="d-flex bg-dark rounded p-1" role="search">
                                 <input class="form-control bg-dark text-light border-0" type="search" placeholder="Digite o que você procura" aria-label="Search" />
                                 <img src={Search} class="" alt="Search" width="40" />
                             </form>
