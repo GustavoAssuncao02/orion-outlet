@@ -13,9 +13,9 @@ function NavBar() {
                     <a class="navbar-brand d-flex justify-content-between align-items-center  w-100 col-12 ">
                         <img src={logo} alt="Logo" width="110" height="76" class="d-inline-block align-text-top" />
                         <div class="col-4 bg-">
-                            <form class="d-flex bg-dark rounded" role="search">
+                            <form class="d-flex bg-dark rounded p-1" role="search">
                                 <input class="form-control bg-dark text-light border-0" type="search" placeholder="Digite o que você procura" aria-label="Search" />
-                                <img src={Search} alt="Search" width="40" />
+                                <img src={Search} class="" alt="Search" width="40" />
                             </form>
                         </div>
                         <img src={cart} alt="Logo" width="40" class="d-inline-block align-text-top col-0" />
@@ -25,10 +25,16 @@ function NavBar() {
 
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light col-12 justify-content-between p-3">
-                <a class="navbar-brand" href="#">Home</a>
-                <a class="navbar-brand" href="#">Categorias</a>
+                <div class="">
+                    <a class="navbar-brand" href="#">Home</a>
+                </div>
+                <div class="">
+                    <a class="navbar-brand" href="#">Categorias</a>
+                </div>
                 <a class="navbar-brand" href="#">Promoções</a>
-                <a class="navbar-brand" href="#">Localizações</a>
+                <div class="">
+                    <a class="navbar-brand" href="#">Localizações</a>
+                </div>
                 <img src={info} alt="Logo" width="40" class="d-inline-block align-text-top col-0" />
             </nav>
         </div>
