@@ -18,7 +18,10 @@ function NavBar() {
                                 <img src={Search} class="" alt="Search" width="40" />
                             </form>
                         </div>
-                        <img src={cart} alt="Logo" width="40" class="d-inline-block align-text-top col-0" />
+                        <div class="">
+                            <img src={cart} alt="Logo" width="40" class="d-inline-block align-text-top col-0" />
+                            <a class="rounded-circle text-light text-sm bg-success">0</a>
+                        </div>
                     </a>
                 </div>
             </nav>
