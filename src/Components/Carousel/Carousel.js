@@ -18,13 +18,14 @@ function Carousel() {
                                             <img id="items-carousel" src={shirt1} />
                                         </div>
                                         <div class="card-body ">
-                                            <p class="card-text">Camiseta High</p>
-                                            <div class="d-flex justify-content-between">
+                                            <p id="Product-name"class="card-text">Camiseta High</p>
+                                            <div id="price"class="d-flex justify-content-between align-items-center">
                                                 <div class="btn-group">
-                                                    <p class="card-text">R$80,00</p>
+                                                    <p class="card-text">R$80,00</p> 
+                                                    <p class="card-text">ou 2X de R$40,00</p>
                                                 </div>
                                             </div>
-                                            <p class="card-text">ou 2X de R$40,00</p>
+                                           
                                         </div>
                                     </div>
                                 </div>

@@ -28,7 +28,7 @@ function NavBar() {
 
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light col-12 justify-content-between p-3">
-                <div class="m">
+                <div id="navbar-menu"class="">
                     <a class="navbar-brand" href="#">Home</a>
                 </div>
                 <div class="">

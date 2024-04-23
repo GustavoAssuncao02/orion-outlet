@@ -1,5 +1,16 @@
-#items-carousel{
+#items-carousel {
     padding-top: 20px;
     width: 350px;
     border-radius: 1%;
+}
+
+#price {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+#Product-name{
+    font-size: 23px;
+    font-family: Arial;
 }
