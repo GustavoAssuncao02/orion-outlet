@@ -5,6 +5,7 @@ import info from "../../Assets/Images/info.png"
 import Search from "../../Assets/Images/search.png"
 import Styles from "../NavBar/NavBar.css"
 import "../NavBar/NavBar.css"
+
 function NavBar() {
     return (
         <div>
