@@ -20,7 +20,7 @@ function NavBar() {
                         </div>
                         <div class="">
                             <img src={cart} alt="Logo" width="40" class="d-inline-block align-text-top col-0" />
-                            <a class="rounded-circle text-light text-sm bg-success">0</a>
+                            <a id="count-items"class="rounded-circle text-light text-sm bg-success">0</a>
                         </div>
                     </a>
                 </div>

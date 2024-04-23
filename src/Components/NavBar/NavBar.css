@@ -1,3 +1,13 @@
 #search-items ::placeholder {
     color: #FFF;
 }
+
+#count-items {
+    font-size: 12px;
+    text-decoration: none;
+    padding-top: 1px;
+    padding-left: 2px;
+    padding-bottom: 1px;
+    padding-right: 2px;
+    vertical-align: super;
+}
