@@ -3,7 +3,6 @@ import logo from "../../Assets/Images/logo.png"
 import cart from "../../Assets/Images/Cart.png"
 import info from "../../Assets/Images/info.png"
 import Search from "../../Assets/Images/search.png"
-import Styles from "../NavBar/NavBar.css"
 import "../NavBar/NavBar.css"
 
 function NavBar() {

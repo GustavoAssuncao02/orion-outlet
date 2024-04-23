@@ -1,5 +1,6 @@
 import React from 'react'
-import img from "../../Assets/Images/logo.png"
+import shirt1 from "../../Assets/Images/shirt1.png"
+import "../Carousel/Carousel.css"
 function Carousel() {
     return (
         <div>
@@ -11,17 +12,18 @@ function Carousel() {
                         <div class="container text-center">
                             <div class="row align-items-start">
                                 <div class="col">
-                                <div class="card shadow-sm">
-                                    <img src={img}/>
-                                        <div class="card-body">
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <div class="card shadow-sm justify-content-center ">
+                                        <div class="align-items-center">
+                                            <img id="items-carousel" class="align-items-center" src={shirt1} />
+                                        </div>
+                                        <div class="card-body ">
+                                            <p class="card-text justify-content-start">Camiseta High</p>
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div class="btn-group">
-                                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                                    <p class="card-text justify-content-start">R$80,00</p>
                                                 </div>
-                                                <small class="text-body-secondary">9 mins</small>
                                             </div>
+                                            <p class="card-text justify-content-start">ou 2X de R$40,00</p>
                                         </div>
                                     </div>
                                 </div>
