@@ -11,7 +11,7 @@ function NavBar() {
             <nav class="navbar bg-black col-12 navbar-expand-lg ">
                 <div class="container-fluid col-12">
                     <a class="navbar-brand d-flex justify-content-between align-items-center  w-100 col-12 ">
-                        <img src={logo} alt="Logo" width="110" height="76" class="d-inline-block align-text-top" />
+                        <img id="logo"src={logo} alt="Logo" width="110" height="76" class="d-inline-block align-text-top" />
                         <div class="col-4 bg-">
                             <form id="search-items"class="d-flex bg-dark rounded p-1" role="search">
                                 <input class="form-control bg-dark text-light border-0" type="search" placeholder="Digite o que você procura" aria-label="Search" />
@@ -28,7 +28,7 @@ function NavBar() {
 
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light col-12 justify-content-between p-3">
-                <div class="">
+                <div class="m">
                     <a class="navbar-brand" href="#">Home</a>
                 </div>
                 <div class="">
