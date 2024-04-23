@@ -11,22 +11,24 @@ function Carousel() {
                     <div class="carousel-item active">
                         <div class="container text-center">
                             <div class="row align-items-start">
+
                                 <div class="col">
-                                    <div class="card shadow-sm justify-content-center ">
-                                        <div class="align-items-center">
-                                            <img id="items-carousel" class="align-items-center" src={shirt1} />
+                                    <div class="card shadow-sm">
+                                        <div>
+                                            <img id="items-carousel" src={shirt1} />
                                         </div>
                                         <div class="card-body ">
-                                            <p class="card-text justify-content-start">Camiseta High</p>
-                                            <div class="d-flex justify-content-between align-items-center">
+                                            <p class="card-text">Camiseta High</p>
+                                            <div class="d-flex justify-content-between">
                                                 <div class="btn-group">
-                                                    <p class="card-text justify-content-start">R$80,00</p>
+                                                    <p class="card-text">R$80,00</p>
                                                 </div>
                                             </div>
-                                            <p class="card-text justify-content-start">ou 2X de R$40,00</p>
+                                            <p class="card-text">ou 2X de R$40,00</p>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="col">
                                     <div class="card shadow-sm">
                                         <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
@@ -42,6 +44,7 @@ function Carousel() {
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="col">
                                     <div class="card shadow-sm">
                                         <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
@@ -64,6 +67,7 @@ function Carousel() {
                     <div class="carousel-item">
                         <div class="container text-center">
                             <div class="row align-items-start">
+
                                 <div class="col">
                                     <div class="card shadow-sm">
                                         <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
@@ -79,6 +83,7 @@ function Carousel() {
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="col">
                                     <div class="card shadow-sm">
                                         <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
@@ -94,6 +99,7 @@ function Carousel() {
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="col">
                                     <div class="card shadow-sm">
                                         <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
@@ -116,6 +122,7 @@ function Carousel() {
                     <div class="carousel-item">
                         <div class="container text-center">
                             <div class="row align-items-start">
+
                                 <div class="col">
                                     <div class="card shadow-sm">
                                         <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
@@ -131,6 +138,7 @@ function Carousel() {
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="col">
                                     <div class="card shadow-sm">
                                         <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
@@ -146,6 +154,7 @@ function Carousel() {
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="col">
                                     <div class="card shadow-sm">
                                         <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
