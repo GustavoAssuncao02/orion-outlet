@@ -1,5 +1,5 @@
 import React from 'react'
-import shirt1 from "../../Assets/Images/shirt1.png"
+import shirt1 from "../../Assets/Images/Products/shirt1.png"
 import "../Carousel/Carousel.css"
 function Carousel() {
     return (
