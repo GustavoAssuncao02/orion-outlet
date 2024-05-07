@@ -4,32 +4,104 @@ import "../Carousel/Carousel.css"
 function Carousel() {
     return (
         <div>
-
-
+            <div class="pt-2"></div>
+            <h1 class=" justify-content-between align-items-center text-center pb-2">DESTAQUES</h1>
             <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="container text-center">
-                            <div class="row align-items-start">
+                    <div class="carousel-item active ">
+                        <div class="container">
 
-                                <div class="col">
-                                    <div class="card shadow-sm">
-                                        <div>
+                            <div class="row">
+
+                                <div class="col d-flex">
+                                    <div id="card-items"class="card shadow-sm">
+                                        <div class="">
                                             <img id="items-carousel" src={shirt1} />
                                         </div>
-                                        <div class="card-body ">
+                                        <div class="card-body">
                                             <p id="Product-name"class="card-text">Camiseta High</p>
-                                            <div id="price"class="d-flex justify-content-between align-items-center">
+                                            <div id="price"class="d-flex align-items-start">
                                                 <div class="btn-group">
                                                     <p class="card-text">R$80,00</p> 
-                                                    <p class="card-text">ou 2X de R$40,00</p>
+                                                    
                                                 </div>
+                                                
                                             </div>
+                                            <p class="card-text">ou 2X de R$40,00</p>
                                            
                                         </div>
                                     </div>
                                 </div>
 
+
+                                <div class="col d-flex">
+                                    <div id="card-items"class="card shadow-sm">
+                                        <div class="">
+                                            <img id="items-carousel" src={shirt1} />
+                                        </div>
+                                        <div class="card-body">
+                                            <p id="Product-name"class="card-text">Camiseta High</p>
+                                            <div id="price"class="d-flex align-items-start">
+                                                <div class="btn-group">
+                                                    <p class="card-text">R$80,00</p> 
+                                                    
+                                                </div>
+                                                
+                                            </div>
+                                            <p class="card-text">ou 2X de R$40,00</p>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col d-flex">
+                                    <div id="card-items"class="card shadow-sm">
+                                        <div class="">
+                                            <img id="items-carousel" src={shirt1} />
+                                        </div>
+                                        <div class="card-body">
+                                            <p id="Product-name"class="card-text">Camiseta High</p>
+                                            <div id="price"class="d-flex align-items-start">
+                                                <div class="btn-group">
+                                                    <p class="card-text">R$80,00</p> 
+                                                    
+                                                </div>
+                                                
+                                            </div>
+                                            <p class="card-text">ou 2X de R$40,00</p>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="carousel-item">
+                        <div class="container text-center">
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card shadow-sm">
+                                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                                        <div class="card-body">
+                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                                </div>
+                                                <small class="text-body-secondary">9 mins</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="col">
                                     <div class="card shadow-sm">
                                         <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
@@ -63,11 +135,17 @@ function Carousel() {
                                 </div>
 
                             </div>
+
+
+
+
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="container text-center">
-                            <div class="row align-items-start">
+
+
+                            <div class="row">
 
                                 <div class="col">
                                     <div class="card shadow-sm">
@@ -118,70 +196,19 @@ function Carousel() {
                                 </div>
 
                             </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="container text-center">
-                            <div class="row align-items-start">
 
-                                <div class="col">
-                                    <div class="card shadow-sm">
-                                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                                        <div class="card-body">
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <div class="btn-group">
-                                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                                </div>
-                                                <small class="text-body-secondary">9 mins</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <div class="col">
-                                    <div class="card shadow-sm">
-                                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                                        <div class="card-body">
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <div class="btn-group">
-                                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                                </div>
-                                                <small class="text-body-secondary">9 mins</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <div class="col">
-                                    <div class="card shadow-sm">
-                                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                                        <div class="card-body">
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <div class="btn-group">
-                                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                                </div>
-                                                <small class="text-body-secondary">9 mins</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                    <span id="button-carousel" class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span  class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span id="button-carousel" class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
