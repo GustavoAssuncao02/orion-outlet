@@ -37,8 +37,10 @@ function NavBar() {
                             Categorias
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Camisas</a></li>
+                            <li><a class="dropdown-item" href="#">Bermudas</a></li>
+                            <li><a class="dropdown-item" href="#">Moletons</a></li>
+                            <li><a class="dropdown-item" href="#">Copo e Garrafas Termicas</a></li>
                             <li><p class="dropdown-divider"/></li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
