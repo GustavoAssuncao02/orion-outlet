@@ -10,16 +10,7 @@
 
 
 
-#ReleasesText {
-    font-size: 40px;
-    text-align: center;
-    bottom: 0;
-    position: absolute;
-    padding-bottom: 50px;
-    padding-left: 15%;
-    font-family: Arial;
-    font: bold;
-}
+
 
 #product {
     height: auto;

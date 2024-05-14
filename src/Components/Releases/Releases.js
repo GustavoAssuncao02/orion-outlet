@@ -9,10 +9,6 @@ function Releases() {
       <div class="bg-black">
         <div class="row pb-5">
           <div id="background-container" className=" col">
-            <div id="ReleasesText" class="text-white">
-              VEJA OS LANÇAMENTOS
-            </div>
-
           </div>
           <div class="col d-flex justify-content-center align-items-center flex-column ">
             <img id="product" src={shirt} />
