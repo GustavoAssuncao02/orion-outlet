@@ -1,0 +1,14 @@
+#Categories{
+    color: black;
+    opacity: 65%;
+    font-size: 25px;
+    font-weight: bold;
+}
+#Categories ul{
+    list-style-type: none;
+}
+#Categories li{
+    font-size: 18px;
+    list-style-type: none;
+    text-align: left;
+}
