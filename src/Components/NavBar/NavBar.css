@@ -2,6 +2,10 @@
     color: #FFF;
 }
 
+#search-items img {
+    margin-left: 15px;
+}
+
 #count-items {
     font-size: 12px;
     text-decoration: none;

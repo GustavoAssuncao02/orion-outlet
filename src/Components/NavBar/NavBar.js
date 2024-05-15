@@ -12,14 +12,14 @@ function NavBar() {
                 <div class="container-fluid col-12">
                     <a class="navbar-brand d-flex justify-content-between align-items-center  w-100 col-12 ">
                         <img id="logo" src={logo} alt="Logo" width="110" height="76" class="d-inline-block align-text-top" />
-                        <div class="col-4 bg-">
-                            <form id="search-items" class="d-flex bg-dark rounded p-1" role="search">
+                        <div class="col-4 ">
+                            <form id="search-items" class="d-flex bg-dark rounded p-1 " role="search">
                                 <input class="form-control bg-dark text-light border-0" type="search" placeholder="Digite o que você procura" aria-label="Search" />
-                                <img src={Search} class="" alt="Search" width="40" />
+                                <img src={Search} class="" alt="Search" width="50" />
                             </form>
                         </div>
                         <div class="">
-                            <img src={cart} alt="Logo" width="40" class="d-inline-block align-text-top col-0" />
+                            <img src={cart} alt="Logo" width="60" class="d-inline-block align-text-top col-0" />
                             <a id="count-items" class="rounded-circle text-light text-sm bg-success">0</a>
                         </div>
                     </a>
