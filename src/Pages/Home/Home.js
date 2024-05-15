@@ -8,12 +8,13 @@ import Intersection from '../../Components/Intersection/Intersection';
 import Advertisement from '../../Components/Advertisement/Advertisement';
 import Location from '../../Components/Location/Location';
 import MenuCategories from '../../Components/MenuCategories/MenuCategories';
+import Footer from '../../Components/Footer/Footer';
 
 const Home = () => {
   return (
-    <><><><><><><><NavBar />
+    <><><><><><><><><NavBar />
       <Commercial></Commercial></>
-      <Carousel /></><Releases></Releases></><Intersection></Intersection></><Advertisement></Advertisement></><Location></Location></><MenuCategories></MenuCategories></>
+      <Carousel /></><Releases></Releases></><Intersection></Intersection></><Advertisement></Advertisement></><Location></Location></><MenuCategories></MenuCategories></><Footer></Footer></>
   )
 }
 
