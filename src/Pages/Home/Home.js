@@ -5,11 +5,12 @@ import Carousel from '../../Components/Carousel/Carousel';
 import Commercial from '../../Components/Commercial/Commercial';
 import Releases from '../../Components/Releases/Releases';
 import Intersection from '../../Components/Intersection/Intersection';
+import Advertisement from '../../Components/Advertisement/Advertisement';
 const Home = () => {
   return (
-    <><><><><NavBar />
+    <><><><><><NavBar />
       <Commercial></Commercial></>
-      <Carousel /></><Releases></Releases></><Intersection></Intersection></>
+      <Carousel /></><Releases></Releases></><Intersection></Intersection></><Advertisement></Advertisement></>
   )
 }
 
