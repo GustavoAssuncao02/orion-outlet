@@ -9,7 +9,7 @@ function Footer() {
     <div>
       <div id="container" class="bg-black ">
         <div class="container text-center">
-          <div class="row align-items-start">
+          <div class="row align-items-start pt-3">
             <div class="col text-white">
               Social
               <div id="socialMidias" class="p-4">

@@ -5,7 +5,7 @@ function MenuCategories() {
     return (
         <div>
             <div>
-                <div class="container text-center align-items-top">
+                <div class="container text-center align-items-top pt-3 pb-2">
                     <div id="Categories" class="row align-items-start">
                         <div class="col">
                             Camisas
