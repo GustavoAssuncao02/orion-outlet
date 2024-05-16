@@ -15,7 +15,7 @@ function NavBar() {
                         <div class="col-4 ">
                             <form id="search-items" class="d-flex bg-dark rounded p-1 " role="search">
                                 <input class="form-control bg-dark text-light border-0" type="search" placeholder="Digite o que você procura" aria-label="Search" />
-                                <img src={Search} class="" alt="Search" width="50" />
+                                <img src={Search} class="" alt="Search" width="50" height="35" />
                             </form>
                         </div>
                         <div class="">
