@@ -4,9 +4,9 @@ function Advertisement() {
     return (
         <div>
             <div id="background-container-Advertisement">
-                <div id="Advertisement-text" class="text-white"> Todos os produtos
-                    <div class="button-Advertisement">
-                        <button class="custom-button">Ver</button>
+                <div id="Advertisement-text" className="text-white"> Todos os produtos
+                    <div className="button-Advertisement">
+                        <button className="custom-button">Ver</button>
                     </div>
                 </div>
 
