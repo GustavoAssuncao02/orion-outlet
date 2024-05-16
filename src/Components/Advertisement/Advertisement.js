@@ -9,10 +9,6 @@ function Advertisement() {
                         <button className="custom-button">Ver</button>
                     </div>
                 </div>
-
-
-
-
             </div>
         </div>
     )
