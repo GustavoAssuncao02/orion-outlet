@@ -5,9 +5,9 @@ function MenuCategories() {
     return (
         <div>
             <div>
-                <div class="container text-center align-items-top pt-3 pb-2">
-                    <div id="Categories" class="row align-items-start">
-                        <div class="col">
+                <div className="container text-center align-items-top pt-3 pb-2">
+                    <div id="Categories" className="row align-items-start">
+                        <div className="col">
                             Camisas
                             <ul>
                                 <li>Camisa Premium</li>
@@ -18,7 +18,7 @@ function MenuCategories() {
                                 <li>Camisa Regata</li>
                             </ul>
                         </div>
-                        <div class="col">
+                        <div className="col">
                             Bermudas
                             <ul>
                                 <li>Bermuda Jeans</li>
@@ -29,7 +29,7 @@ function MenuCategories() {
                                 <li>Bermuda Brim Lacost</li>
                             </ul>
                         </div>
-                        <div class="col">
+                        <div className="col">
                             Calças
                             <ul>
                                 <li>Calça</li>
@@ -37,14 +37,14 @@ function MenuCategories() {
                                 <li>Jogger</li>
                             </ul>
                         </div>
-                        <div class="col">
+                        <div className="col">
                             Inverno
                             <ul>
                                 <li>Suéter</li>
                                 <li>Moleton Gola Careca</li>
                             </ul>
                         </div>
-                        <div class="col">
+                        <div className="col">
                             Sobre
                         </div>
                     </div>
