@@ -15,7 +15,7 @@ function Releases() {
             <div id="Price" className="text-white">
               <h1>Camiseta Gucci</h1>
               <p className="">R$80,00</p>
-              <p className="">ou 2X de R$40,00</p>
+              <p className="">ou 2X de R$40,00</p> 
             </div>
           </div>
         </div>
