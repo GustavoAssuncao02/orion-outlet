@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Releases.css"
-// import shirt from "../../Assets/Images/Products/shirt4.png";
+import shirt from "../../assets/Images/Products/shirt4.png"
  
 function Releases() {
   return (
@@ -11,7 +11,7 @@ function Releases() {
           <div id="background-container" className=" col">
           </div>
           <div className="col d-flex justify-content-center align-items-center flex-column ">
-            <img id="product" src={{}} />
+            <img id="product" src={shirt} />
             <div id="Price" className="text-white">
               <h1>Camiseta Gucci</h1>
               <p className="">R$80,00</p>
