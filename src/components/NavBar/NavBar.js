@@ -14,7 +14,7 @@ function NavBar() {
             alt="Camisa"
               id="logo"
               src={Logo}
-              alt="Logo"
+              alt="Camisa"
               width="110"
               height="76"
               className="d-inline-block align-text-top"
