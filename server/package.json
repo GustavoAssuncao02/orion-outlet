@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "This project is a marketplace for a local city store, aimed at selling clothes and accessories in a simple and dynamic manner",
+  "main": "server.js",
+  "scripts": {
+    "test": "Perform-test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GustavoAssuncao02/orion-outlet.git"
+  },
+  "keywords": [
+    "1234"
+  ],
+  "author": "Camila de Carvalho e Gustavo Assunção",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GustavoAssuncao02/orion-outlet/issues"
+  },
+  "homepage": "https://github.com/GustavoAssuncao02/orion-outlet#readme"
+}
