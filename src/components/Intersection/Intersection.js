@@ -4,7 +4,7 @@ import "./Intersection.css";
 function Intersection() {
   return (
     <div>
-      <div id="container" className="bg-black ">
+      <div id="container" className="bg-black pb-5">
         <div id="title" className="text-white">
           Grife
         </div>
