@@ -11,7 +11,6 @@ function NavBar() {
         <div className="container-fluid col-12">
           <a className="navbar-brand d-flex justify-content-between align-items-center  w-100 col-12 ">
             <img
-            alt="Camisa"
               id="logo"
               src={Logo}
               alt="Logo"
