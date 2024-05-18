@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Releases.css"
 // import shirt from "../../Assets/Images/Products/shirt4.png";
-
+ 
 function Releases() {
   return (
     <div className="pt-5">
