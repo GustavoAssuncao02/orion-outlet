@@ -1,21 +1,28 @@
 import React from 'react';
 import "./Home.css";
-import NavBar from '../../Components/NavBar/NavBar';
-import Carousel from '../../Components/Carousel/Carousel';
-import Commercial from '../../Components/Commercial/Commercial';
-import Releases from '../../Components/Releases/Releases';
-import Intersection from '../../Components/Intersection/Intersection';
-import Advertisement from '../../Components/Advertisement/Advertisement';
-import Location from '../../Components/Location/Location';
-import MenuCategories from '../../Components/MenuCategories/MenuCategories';
-import Footer from '../../Components/Footer/Footer';
+import NavBar from '../../components/NavBar/NavBar';
+import Commercial from '../../components/Commercial/Commercial';
+import Carousel from '../../components/Carousel/Carousel';
+import Releases from '../../components/Releases/Releases';
+import Intersection from '../../components/Intersection/Intersection';
+import Advertisement from '../../components/Advertisement/Advertisement';
+import Location from '../../components/Location/Location';
+import MenuCategories from '../../components/MenuCategories/MenuCategories';
+import Footer from '../../components/Footer/Footer';
 
 const Home = () => {
   return (
-    <><><><><><><><><NavBar />
-      <Commercial></Commercial></>
-      <Carousel /></><Releases></Releases></><Intersection></Intersection></><Advertisement></Advertisement></><Location></Location></><MenuCategories></MenuCategories></><Footer></Footer></>
-  )
+    <div>
+      <NavBar />
+      <Commercial />
+      <Carousel />
+      <Releases />
+      <Intersection />
+      <Advertisement />
+      <Location />
+      <MenuCategories />
+      <Footer />
+    </div>
+  );
 }
-
-export default Home
+export default Home;

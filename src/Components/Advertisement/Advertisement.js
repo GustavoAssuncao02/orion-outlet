@@ -1,5 +1,5 @@
 import React from 'react'
-import "../Advertisement/Advertisement.css"
+import "./Advertisement.css"
 function Advertisement() {
     return (
         <div>

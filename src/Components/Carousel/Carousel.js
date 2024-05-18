@@ -1,6 +1,6 @@
 import React from 'react'
-import shirt1 from "../../Assets/Images/Products/shirt1.png"
-import "../Carousel/Carousel.css"
+import shirt1 from "../../assets/Images/Products/shirt1.png"
+import "./Carousel.css"
 function Carousel() {
     return (
         <div>

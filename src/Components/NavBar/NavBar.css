@@ -1,32 +1,69 @@
-#search-items ::placeholder {
-    color: #FFF;
+.cart-section {
+    margin-right: 10px;
 }
 
-#search-items img {
-    margin-left: 15px;
+.cart {
+    color: white;
+    font-size: 30px;
+    margin-right: 10px;
 }
 
-#count-items {
-    font-size: 12px;
+.search-icon {
+    color: white;
+    margin-right: 10px; 
+}
+
+.search-items input::placeholder {
+    color: #cccccc73;
+}
+
+.search-items {
+    margin-left: 10px;
+}
+
+.button-search {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-items {
+    display: flex;
+    align-items: center;
+}
+
+.search-items input {
+    flex-grow: 1; 
+    border: none;
+    padding: 0.5em;
+}
+
+.count {
+    font-size: 10px;
     text-decoration: none;
-    padding-top: 1px;
-    padding-left: 5px;
-    padding-bottom: 1px;
-    padding-right: 5px;
-    vertical-align: super;
+    padding: 0px 5px 2px 5px;
+    vertical-align: top;
+    background-color: #6BA85C;
 }
-#logo{
+
+#logo {
     margin-left: 40px;
 }
 
-#navbar-menu{
+#navbar-menu {
     margin-left: 50px;
     margin-right: 50px;
 }
-#dropdown{
+
+#dropdown {
     list-style-type: none;
 }
-#secondary-navbar{
+
+#secondary-navbar {
     font-family: Arial;
     font-size: large;
 }
