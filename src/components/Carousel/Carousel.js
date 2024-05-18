@@ -15,7 +15,7 @@ function Carousel() {
 
                                 <div className="col d-flex">
                                     <div className="align-items-start">
-                                        <img id="items-carousel" src={shirt1}/>
+                                        <img id="items-carousel"  alt="Camisa" src={shirt1}/>
                                         <div className="card-body">
                                             <p id="Product-name" className="card-text">Camiseta High</p>
                                             <div id="price" className="d-flex align-items-start">
@@ -34,7 +34,7 @@ function Carousel() {
 
                                 <div className="col d-flex">
                                     <div className="align-items-start">
-                                        <img id="items-carousel" src={shirt1}/>
+                                        <img id="items-carousel" alt="Camisa" src={shirt1}/>
                                         <div className="card-body">
                                             <p id="Product-name" className="card-text">Camiseta High</p>
                                             <div id="price" className="d-flex align-items-start">
@@ -52,7 +52,7 @@ function Carousel() {
 
                                 <div className="col d-flex">
                                     <div className="align-items-start">
-                                        <img id="items-carousel" src={shirt1}/>
+                                        <img id="items-carousel" alt="Camisa" src={shirt1}/>
                                         <div className="card-body">
                                             <p id="Product-name" className="card-text">Camiseta High</p>
                                             <div id="price" className="d-flex align-items-start">
@@ -84,7 +84,7 @@ function Carousel() {
 
                                <div className="col d-flex">
                                     <div className="align-items-start">
-                                        <img id="items-carousel" src={shirt1}/>
+                                        <img id="items-carousel" alt="Camisa" src={shirt1}/>
                                         <div className="card-body">
                                             <p id="Product-name" className="card-text">Camiseta High</p>
                                             <div id="price" className="d-flex align-items-start">
@@ -103,7 +103,7 @@ function Carousel() {
 
                                 <div className="col d-flex">
                                     <div className="align-items-start">
-                                        <img id="items-carousel" src={shirt1}/>
+                                        <img id="items-carousel" alt="Camisa" src={shirt1}/>
                                         <div className="card-body">
                                             <p id="Product-name" className="card-text">Camiseta High</p>
                                             <div id="price" className="d-flex align-items-start">
@@ -122,7 +122,7 @@ function Carousel() {
 
                                 <div className="col d-flex">
                                     <div className="align-items-start">
-                                        <img id="items-carousel" src={shirt1}/>
+                                        <img id="items-carousel" alt="Camisa" src={shirt1}/>
                                         <div className="card-body">
                                             <p id="Product-name" className="card-text">Camiseta High</p>
                                             <div id="price" className="d-flex align-items-start">
@@ -153,7 +153,7 @@ function Carousel() {
 
                             <div className="col d-flex">
                                     <div className="align-items-start">
-                                        <img id="items-carousel" src={shirt1}/>
+                                        <img id="items-carousel" alt="Camisa" src={shirt1}/>
                                         <div className="card-body">
                                             <p id="Product-name" className="card-text">Camiseta High</p>
                                             <div id="price" className="d-flex align-items-start">
@@ -171,7 +171,7 @@ function Carousel() {
 
                                 <div className="col d-flex">
                                     <div className="align-items-start">
-                                        <img id="items-carousel" src={shirt1}/>
+                                        <img id="items-carousel" alt="Camisa" src={shirt1}/>
                                         <div className="card-body">
                                             <p id="Product-name" className="card-text">Camiseta High</p>
                                             <div id="price" className="d-flex align-items-start">
@@ -189,7 +189,7 @@ function Carousel() {
 
                                 <div className="col d-flex">
                                     <div className="align-items-start">
-                                        <img id="items-carousel" src={shirt1}/>
+                                        <img id="items-carousel" alt="Camisa" src={shirt1}/>
                                         <div className="card-body">
                                             <p id="Product-name" className="card-text">Camiseta High</p>
                                             <div id="price" className="d-flex align-items-start">
