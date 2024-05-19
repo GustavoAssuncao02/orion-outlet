@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 19/05/2024 às 06:37
+-- Tempo de geração: 19/05/2024 às 22:10
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -24,49 +24,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `cart`
---
-
-CREATE TABLE `cart` (
-  `id_cart` int(11) NOT NULL,
-  `id_userfk` int(11) NOT NULL,
-  `id_itemsfk` int(11) NOT NULL,
-  `payment_method` varchar(45) NOT NULL,
-  `installment` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
--- Estrutura para tabela `description`
---
-
-CREATE TABLE `description` (
-  `id_description` int(11) NOT NULL,
-  `color` varchar(45) NOT NULL,
-  `size` varchar(5) NOT NULL,
-  `material` varchar(35) NOT NULL,
-  `style` varchar(200) NOT NULL,
-  `price` varchar(45) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
--- Estrutura para tabela `items`
---
-
-CREATE TABLE `items` (
-  `id_items` int(11) NOT NULL,
-  `name` varchar(45) NOT NULL,
-  `quantity` int(200) NOT NULL,
-  `category` varchar(45) NOT NULL,
-  `id_descriptionfk` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
 -- Estrutura para tabela `user`
 --
 
@@ -77,33 +34,19 @@ CREATE TABLE `user` (
   `date_of_birth` date NOT NULL,
   `gender` varchar(45) NOT NULL,
   `email` varchar(45) NOT NULL,
-  `is_admin` tinyint(4) NOT NULL
+  `is_admin` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `user`
+--
+
+INSERT INTO `user` (`id_user`, `name`, `number`, `date_of_birth`, `gender`, `email`, `is_admin`) VALUES
+(1, 'admin', '71996613066', '0000-00-00', 'Male', 'update@email.com', 1);
 
 --
 -- Índices para tabelas despejadas
 --
-
---
--- Índices de tabela `cart`
---
-ALTER TABLE `cart`
-  ADD PRIMARY KEY (`id_cart`),
-  ADD KEY `user_fk` (`id_userfk`),
-  ADD KEY `items_fk` (`id_itemsfk`);
-
---
--- Índices de tabela `description`
---
-ALTER TABLE `description`
-  ADD PRIMARY KEY (`id_description`);
-
---
--- Índices de tabela `items`
---
-ALTER TABLE `items`
-  ADD PRIMARY KEY (`id_items`),
-  ADD KEY `fk` (`id_descriptionfk`);
 
 --
 -- Índices de tabela `user`
@@ -116,45 +59,10 @@ ALTER TABLE `user`
 --
 
 --
--- AUTO_INCREMENT de tabela `cart`
---
-ALTER TABLE `cart`
-  MODIFY `id_cart` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de tabela `description`
---
-ALTER TABLE `description`
-  MODIFY `id_description` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de tabela `items`
---
-ALTER TABLE `items`
-  MODIFY `id_items` int(11) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT de tabela `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- Restrições para tabelas despejadas
---
-
---
--- Restrições para tabelas `cart`
---
-ALTER TABLE `cart`
-  ADD CONSTRAINT `items_fk` FOREIGN KEY (`id_itemsfk`) REFERENCES `items` (`id_items`),
-  ADD CONSTRAINT `user_fk` FOREIGN KEY (`id_userfk`) REFERENCES `user` (`id_user`);
-
---
--- Restrições para tabelas `items`
---
-ALTER TABLE `items`
-  ADD CONSTRAINT `fk` FOREIGN KEY (`id_descriptionfk`) REFERENCES `description` (`id_description`);
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
