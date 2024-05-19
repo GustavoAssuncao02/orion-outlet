@@ -6,7 +6,7 @@ function MenuCategories() {
     <div>
       <div>
         <div className="container text-center align-items-top pt-3 pb-2">
-          <div id="Categories" className="row align-items-start">
+          <div className="row align-items-start categories">
             <div className="col">
               Camisas
               <ul>

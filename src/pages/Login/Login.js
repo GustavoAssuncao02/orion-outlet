@@ -16,7 +16,6 @@ function Login() {
                 <div data-mdb-input-init className="form-outline mb-4">
                   <input
                     type="email"
-                    id="form3Example3"
                     className="form-control form-control-lg"
                     placeholder="Digite o login do usuário"
                   />
@@ -27,7 +26,6 @@ function Login() {
                 <div data-mdb-input-init className="form-outline mb-3">
                   <input
                     type="password"
-                    id="form3Example4"
                     className="form-control form-control-lg"
                     placeholder="Digite a senha"
                   />

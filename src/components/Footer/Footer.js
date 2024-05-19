@@ -7,7 +7,7 @@ import { FaFacebook } from "react-icons/fa";
 function Footer() {
   return (
     <div>
-      <div id="container" className="bg-black ">
+      <div className="bg-black ">
         <div className="container text-center">
           <div className="row align-items-start pt-3">
             <div className="col text-white">
