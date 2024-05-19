@@ -17,7 +17,7 @@ function Login() {
 
   return (
     <div>
-      <MDBContainer fluid>
+      <MDBContainer fluid className="background-login">
 
         <MDBRow className='d-flex justify-content-center align-items-center h-100'>
           <MDBCol col='12'>
