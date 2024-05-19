@@ -19,7 +19,7 @@ function NavBar() {
   ];
 
   const info = `
-Página inicial Orion Outlet, para mais informações, entre em contato com nossa loja via Whatsapp: (33 998759437)
+Página inicial Orion Outlet, para mais informações, entre em contato com nossa loja via Whatsapp: (71 99661-3066)
 `;
 
   return (
