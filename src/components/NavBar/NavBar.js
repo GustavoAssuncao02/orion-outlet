@@ -47,7 +47,7 @@ function NavBar() {
         className="navbar navbar-expand-lg navbar-light bg-light col-12 justify-content-between p-3"
       >
         <div id="navbar-menu" className="">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="http://localhost:3000/">
             Home
           </a>
         </div>
@@ -98,7 +98,7 @@ function NavBar() {
           Promoções
         </a>
         <div className="">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="http://localhost:3000/location">
             Localizações
           </a>
         </div>

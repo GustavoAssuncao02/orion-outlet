@@ -19,6 +19,9 @@ const Home = () => {
       <Releases />
       <Intersection />
       <Advertisement />
+      <h1 className=" justify-content-between align-items-center text-center pt-5 pb-5">
+        Localização
+      </h1>
       <Location />
       <MenuCategories />
       <Footer />
