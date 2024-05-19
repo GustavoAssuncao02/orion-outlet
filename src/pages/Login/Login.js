@@ -4,6 +4,7 @@ import Logo from "../../assets/Images/OrionOutlet/OrionOutlet.jpg"
 
 
 function Login() {
+    
     return (
         <div>
             <section className="vh-100">
@@ -31,7 +32,7 @@ function Login() {
 
                                 <div className="text-center text-lg-start mt-4 pt-2">
                                     <button type="button" data-mdb-button-init data-mdb-ripple-init className="btn btn-primary btn-lg Login-button"
-                                    onClick={(e) => hendleLogin(e)}//Function to handle login
+                                    // onClick={(e) => hendleLogin(e)}Function to handle login
                                         >Login</button>
                                 </div>
 
