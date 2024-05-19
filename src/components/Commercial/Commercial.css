@@ -10,15 +10,10 @@
     font-family: Arial;
 }
 
-#socialMidias img{
-    width: 50px;
-    height: auto;
-}
-#socialMidias{
+.social-midias{
     padding-right: 130px;
 }
-
-#CommercialText{
-    font-size: 70px;
-    padding-left: 70px;
+.social-icon{
+    color: white;
+    font-size: 20px;
 }
