@@ -72,10 +72,9 @@ Página inicial Orion Outlet, para mais informações, entre em contato com noss
         </a>
         <div> 
           <Dropdown>
-            <Dropdown.Toggle variant="light" id="dropdown-basic" className="navbar-category">
+            <Dropdown.Toggle variant="light" className="navbar-category">
               Categorias
             </Dropdown.Toggle>
-
             <Dropdown.Menu className="bg-dark">
               {dropdownOptions.map((option, index) => (
                 <Dropdown.Item key={index} href={option.href} className="text-white dropdown-option">

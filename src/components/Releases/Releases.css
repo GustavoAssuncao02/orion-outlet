@@ -1,4 +1,4 @@
-#background-container {
+.background-container-releases {
     background-image: url('../../assets/Images/Commercial/Commercial2.png');
     background-size: 70% auto;
     background-position: center;
@@ -8,18 +8,18 @@
     height: 100vh;
 }
 
-#product {
+.product {
     height: auto;
     width: 350px;
 }
-#Price{
+.price{
     padding-right: 140px;
 }
-#Price h1{
+.price h1{
     font-size: 30px;
 }
 
-#Price p {
+.price p {
     font-size: 20px;
     font-weight: bold;
 }

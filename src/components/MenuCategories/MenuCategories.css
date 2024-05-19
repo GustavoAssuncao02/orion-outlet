@@ -1,13 +1,13 @@
-#Categories{
+.categories{
     color: black;
     opacity: 65%;
     font-size: 25px;
     font-weight: bold;
 }
-#Categories ul{
+.categories ul{
     list-style-type: none;
 }
-#Categories li{
+.categories li{
     font-size: 18px;
     list-style-type: none;
     text-align: left;

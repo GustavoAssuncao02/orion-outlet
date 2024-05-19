@@ -1,4 +1,4 @@
-#background-container-Advertisement {
+.background-container-Advertisement {
     background-image: url('../../assets/Images/Commercial/Commercial3.jpg');
     background-size: cover;
     background-position: center;
@@ -8,7 +8,7 @@
     height: 100vh;
 }
 
-#Advertisement-text{
+.advertisement-text{
     font-size: 60px;
     padding-top: 250px;
     padding-left: 100px;
