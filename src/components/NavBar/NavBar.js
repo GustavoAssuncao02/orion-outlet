@@ -27,16 +27,16 @@ Página inicial Orion Outlet, para mais informações, entre em contato com noss
       <nav className="navbar bg-black col-12 navbar-expand-lg">
         <div className="container-fluid col-12">
           <a
-            href="https://github.com/"
             className="navbar-brand d-flex justify-content-between align-items-center w-100 col-12"
           >
+            <a href="http://localhost:3000/">
             <img
               src={Logo}
               alt="Camisa"
               width="110"
               height="76"
               className="d-inline-block align-text-top logo"
-            />
+            /></a>
             <div className="col-4">
               <form
                 className="d-flex bg-dark rounded-pill p-2 search-items"
