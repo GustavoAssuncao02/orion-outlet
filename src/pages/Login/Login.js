@@ -1,15 +1,12 @@
 import React from "react";
 import "../Login/Login.css";
-import Logo from "../../assets/Images/OrionOutlet/OrionOutlet.jpg";
 import {
-  MDBBtn,
   MDBContainer,
   MDBRow,
   MDBCol,
   MDBCard,
   MDBCardBody,
   MDBInput,
-  MDBIcon
 }
   from 'mdb-react-ui-kit';
 
