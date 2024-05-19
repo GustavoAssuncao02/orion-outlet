@@ -1,12 +1,12 @@
 const express = require('express');
-const cors = require('cors');
+const cors = require('../server/middlewares/Middlewares.js');
 const mysql = require('mysql2');
 const app = express();
 const port = 4000;
 const routes = require('../server/router/Router.js');
 
 
-app.use(cors()) 
+app.use(cors)
 app.use(express.json())
 app.use('/api', routes);
 
