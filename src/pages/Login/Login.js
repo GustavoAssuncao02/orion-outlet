@@ -1,61 +1,48 @@
 import React from "react";
 import "../Login/Login.css";
 import Logo from "../../assets/Images/OrionOutlet/OrionOutlet.jpg";
+import {
+  MDBBtn,
+  MDBContainer,
+  MDBRow,
+  MDBCol,
+  MDBCard,
+  MDBCardBody,
+  MDBInput,
+  MDBIcon
+}
+  from 'mdb-react-ui-kit';
 
 function Login() {
-  
+
   return (
     <div>
-      <section className="p-5">
-        <div className="container-fluid h-custom">
-          <div className=" d-flex justify-content-center align-items-center">
-            <div className="col-md-9 col-lg-6 col-xl-5">
-              <img src={Logo} className="img-fluid logo1" alt="Sample" />
-            </div>
-            <div className="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-              <form>
-                <div data-mdb-input-init className="form-outline mb-4">
-                  <input
-                    type="email"
-                    className="form-control form-control-lg"
-                    placeholder="Digite o login do usuário"
-                  />
-                  <label className="form-label" for="form3Example3">
-                    Login
-                  </label>
-                </div>
-                <div data-mdb-input-init className="form-outline mb-3">
-                  <input
-                    type="password"
-                    className="form-control form-control-lg"
-                    placeholder="Digite a senha"
-                  />
-                  <label className="form-label" for="form3Example4">
-                    Senha
-                  </label>
-                </div>
+      <MDBContainer fluid>
 
-                <div className="d-flex justify-content-between align-items-center"></div>
+        <MDBRow className='d-flex justify-content-center align-items-center h-100'>
+          <MDBCol col='12'>
 
-                <div className="text-center text-lg-start mt-4 pt-2">
-                  <button
-                    type="button"
-                    data-mdb-button-init
-                    data-mdb-ripple-init
-                    className="btn btn-primary btn-lg Login-button"
-                  // onClick={(e) => hendleLogin(e)} //Function to handle login
-                  >
-                    Login
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
+            <MDBCard className='bg-dark text-white my-5 mx-auto' style={{ borderRadius: '1rem', maxWidth: '400px' }}>
+              <MDBCardBody className='p-5 d-flex flex-column align-items-center mx-auto w-100'>
+
+                <h2 className="fw-bold mb-2 text-uppercase">Login</h2>
+                <p className="text-white-50 mb-5"></p>
+
+                <MDBInput wrapperClass='mb-4 mx-5 w-100' labelClass='text-white' label='Login' id='formControlLg' type='email' size="lg" />
+                <MDBInput wrapperClass='mb-4 mx-5 w-100' labelClass='text-white' label='Senha' id='formControlLg' type='password' size="lg" />
+                <button className="dark-button">
+                  Login
+                </button>
+              </MDBCardBody>
+            </MDBCard>
+
+          </MDBCol>
+        </MDBRow>
+
+      </MDBContainer>
 
 
-      <div className="text-white bg-dark p-4">
+      <div className="text-white bg-dark p-5">
         <p>
           Copyright ©2024 Gustavo e Camila. Todos os direitos reservados.
           O conteúdo deste site, incluindo texto, imagens, gráficos e outros materiais, é protegido por leis de direitos autorais e outras leis de propriedade intelectual. O conteúdo deste site não pode ser reproduzido, distribuído, transmitido, exibido, publicado ou veiculado sem a autorização prévia por escrito de Gustavo e Camila.

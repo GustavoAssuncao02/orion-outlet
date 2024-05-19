@@ -1,28 +1,39 @@
+body {
+    /* fallback for old browsers */
+    background: #6a11cb;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgb(127, 127, 127), rgb(187, 189, 192));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgb(154, 154, 154), rgb(191, 192, 197));
+  }
 
-
-.divider:after,
-.divider:before {
-    content: "";
-    flex: 1;
-    height: 1px;
-    background: #eee;
-}
-
-.h-custom {
-    height: calc(100% - 73px);
-}
-
-@media (max-width: 450px) {
-    .h-custom {
-        height: 100%;
-    }
-}
-
-.Login-button {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+.button-login {
+    background-color: white;
+    font-size: 100px;
 }
 
 .logo1{
     border-radius: 50%;
 }
+
+/* Button.css */
+.dark-button {
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #555;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .dark-button:hover {
+    background-color: #555;
+    border-color: #777;
+  }
+  
