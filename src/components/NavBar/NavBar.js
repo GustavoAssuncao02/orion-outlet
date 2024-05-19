@@ -1,10 +1,27 @@
+import React from "react";
 import Logo from "../../assets/Images/logo.png";
 import { FaCartShopping } from "react-icons/fa6";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Dropdown from "react-bootstrap/Dropdown";
+import Tooltip from "@mui/material/Tooltip";
+import Button from "@mui/material/Button";
 import "./NavBar.css";
 
 function NavBar() {
+  const dropdownOptions = [
+    { label: "Camisas", href: "https://github.com/" },
+    { label: "Bermudas", href: "https://github.com/" },
+    { label: "Moletons", href: "https://github.com/" },
+    { label: "Copo e Garrafas Termicas", href: "https://github.com/" },
+    { label: "Something else here", href: "https://github.com/" },
+  ];
+
+  const info = `
+Página inicial Orion Outlet, para mais informações, entre em contato com nossa loja via Whatsapp: (33 998759437)
+`;
+
   return (
     <div>
       <nav className="navbar bg-black col-12 navbar-expand-lg">
@@ -49,67 +66,36 @@ function NavBar() {
         </div>
       </nav>
 
-      <nav
-        id="secondary-navbar"
-        className="navbar navbar-expand-lg navbar-light bg-light col-12 justify-content-between p-3"
-      >
-        <div id="navbar-menu">
-          <a href="http://localhost:3000/" className="navbar-brand">
-            Home
-          </a>
-        </div>
-        <div id="dropdown">
-          <li className="nav-item dropdown">
-            <a
-              href="https://github.com/"
-              className="nav-link dropdown-toggle"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
+      <nav className="navbar navbar-expand-lg navbar-light bg-light col-12 justify-content-between secondary-navbar">
+        <a href="http://localhost:3000/" className="ms-5 navbar-options">
+          Home
+        </a>
+        <div> 
+          <Dropdown>
+            <Dropdown.Toggle variant="light" id="dropdown-basic" className="navbar-category">
               Categorias
-            </a>
-            <ul className="dropdown-menu">
-              <li>
-                <a href="https://github.com/" className="dropdown-item">
-                  Camisas
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/" className="dropdown-item">
-                  Bermudas
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/" className="dropdown-item">
-                  Moletons
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/" className="dropdown-item">
-                  Copo e Garrafas Termicas
-                </a>
-              </li>
-              <li>
-                <p className="dropdown-divider" />
-              </li>
-              <li>
-                <a href="https://github.com/" className="dropdown-item">
-                  Something else here
-                </a>
-              </li>
-            </ul>
-          </li>
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu className="bg-dark">
+              {dropdownOptions.map((option, index) => (
+                <Dropdown.Item key={index} href={option.href} className="text-white dropdown-option">
+                  {option.label}
+                </Dropdown.Item>
+              ))}
+            </Dropdown.Menu>
+          </Dropdown>
         </div>
-        <a href="https://github.com/" className="navbar-brand">
+        <a href="https://github.com/" className="navbar-options">
           Promoções
         </a>
-        <div>
-          <a href="http://localhost:3000/location" className="navbar-brand">
-            Localizações
-          </a>
-        </div>
-        <IoIosInformationCircleOutline className="d-inline-block align-text-top col-0" />
+        <a href="http://localhost:3000/location" className="navbar-options">
+          Localizações
+        </a>
+        <Tooltip title={info}>
+          <Button sx={{ m: 1 }}>
+            <IoIosInformationCircleOutline className="me-4 info"/>
+          </Button>
+        </Tooltip>
       </nav>
     </div>
   );
