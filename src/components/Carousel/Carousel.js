@@ -10,6 +10,7 @@ function Carousel() {
       </h1>
       <div id="carouselExample" className="carousel slide">
         <div className="carousel-inner">
+
           <div className="carousel-item active ">
             <div className="container">
               <div className="row">
@@ -68,7 +69,7 @@ function Carousel() {
           </div>
 
           <div className="carousel-item">
-            <div className="container text-center">
+            <div className="container">
               <div className="row">
                 <div className="col d-flex">
                   <div className="align-items-start">
@@ -123,8 +124,10 @@ function Carousel() {
               </div>
             </div>
           </div>
-          <div className="carousel-item">
-            <div className="container text-center">
+
+
+          <div className="carousel-item ">
+            <div className="container">
               <div className="row">
                 <div className="col d-flex">
                   <div className="align-items-start">
@@ -179,6 +182,10 @@ function Carousel() {
               </div>
             </div>
           </div>
+
+
+
+
         </div>
         <button
           className="carousel-control-prev"
