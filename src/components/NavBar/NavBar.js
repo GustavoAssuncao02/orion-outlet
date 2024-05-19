@@ -14,12 +14,11 @@ function NavBar() {
             className="navbar-brand d-flex justify-content-between align-items-center w-100 col-12"
           >
             <img
-              id="logo"
               src={Logo}
               alt="Camisa"
               width="110"
               height="76"
-              className="d-inline-block align-text-top"
+              className="d-inline-block align-text-top logo"
             />
             <div className="col-4">
               <form
