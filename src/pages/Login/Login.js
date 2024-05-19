@@ -12,7 +12,7 @@ function Login() {
                     <div className="row d-flex justify-content-center align-items-center h-100">
                         <div className="col-md-9 col-lg-6 col-xl-5">
                             <img src={Logo}
-                                className="img-fluid logo" alt="Sample image" />
+                                className="img-fluid logo1" alt="Sample image" />
                         </div>
                         <div className="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
                             <form>
