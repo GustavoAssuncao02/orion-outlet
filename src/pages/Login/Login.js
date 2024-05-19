@@ -25,8 +25,20 @@ function Login() {
                 <h2 className="fw-bold mb-2 text-uppercase">Login</h2>
                 <p className="text-white-50 mb-5"></p>
 
-                <MDBInput wrapperClass='mb-4 mx-5 w-100' labelClass='text-white' label='Login' id='formControlLg' type='email' size="lg" />
-                <MDBInput wrapperClass='mb-4 mx-5 w-100' labelClass='text-white' label='Senha' id='formControlLg' type='password' size="lg" />
+                <MDBInput wrapperClass='mb-4 mx-5 w-100'
+                  labelClass='text-white'
+                  label='Login'
+                  id='formControlLg'
+                  type='email'
+                  size="lg"
+                  onChange={e => setEmail(e.target.value)} />
+                <MDBInput wrapperClass='mb-4 mx-5 w-100'
+                  labelClass='text-white'
+                  label='Senha'
+                  id='formControlLg'
+                  type='password'
+                  size="lg"
+                  onChange={e => setPassWord(e.target.value)} />
                 <button className="dark-button">
                   Login
                 </button>
