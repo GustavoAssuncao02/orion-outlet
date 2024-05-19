@@ -11,7 +11,7 @@ const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: '',
-  database: 'OrionOutlet'
+  database: 'orion_outlet'
 });
 
 db.connect((err) => {
