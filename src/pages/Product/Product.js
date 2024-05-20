@@ -14,22 +14,31 @@ function Product() {
             <NavBar />
             <div>
                 <div className=" pt-5 ">
-                    <div className="row justify-content-center">
-                        <div className="col col-2">
+                    <div className="row justify-content-center col-12">
+                        <div className="col-2">
                             <img src={Shirt} alt='OakleyWindbreaker' className='pb-5' />
                             <img src={Shirt2} alt='OakleyWindbreaker' className='pb-5' />
                             <img src={Shirt3} alt='OakleyWindbreaker' className='pb-5' />
                         </div>
-                        <div className="col-sm col-3">
+                        <div className="col-sm col-2">
                             <img src={Shirt4} alt='OakleyWindbreaker' />
                         </div>
-                        <div className="col col-6 text-center product-catalog ">
+                        <div className="col-5 pe-5 text-center product-catalog ">
                             <h2>CORTA VENTO OAKLEY</h2>
                             <h5 className="pt-4">R$100,00</h5>
                             <h6>À Vista ou Cartão</h6>
                             <h6>Em até 3x sem juros</h6>
-                            <div class="circle"></div>
+                            <div className="colors pb-5 pt-3">
+                                <div className="circle m-1 bg-success"></div>
+                                <div className="circle m-1 bg-secondary"></div>
+                                <div className="circle m-1 bg-danger"></div>
+                                <div className="circle m-1 bg-dark"></div>
+                                <div className="circle m-1 bg-warning"></div>
+                            </div>
+                            <h6 className='p-1 border custom-border'>Escolha o tamanho</h6>
                         </div>
+
+
                     </div>
                 </div>
             </div>
