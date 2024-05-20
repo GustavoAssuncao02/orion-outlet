@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 19/05/2024 às 22:10
+-- Tempo de geração: 20/05/2024 às 02:11
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -24,45 +24,48 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `user`
+-- Estrutura para tabela `items`
 --
 
-CREATE TABLE `user` (
-  `id_user` int(11) NOT NULL,
+CREATE TABLE `items` (
+  `id_items` int(11) NOT NULL,
   `name` varchar(45) NOT NULL,
-  `number` varchar(11) NOT NULL,
-  `date_of_birth` date NOT NULL,
-  `gender` varchar(45) NOT NULL,
-  `email` varchar(45) NOT NULL,
-  `is_admin` tinyint(1) NOT NULL
+  `image` blob NOT NULL,
+  `quantity` int(200) NOT NULL,
+  `category` varchar(45) NOT NULL,
+  `id_descriptionfk` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Despejando dados para a tabela `user`
---
-
-INSERT INTO `user` (`id_user`, `name`, `number`, `date_of_birth`, `gender`, `email`, `is_admin`) VALUES
-(1, 'admin', '71996613066', '0000-00-00', 'Male', 'update@email.com', 1);
 
 --
 -- Índices para tabelas despejadas
 --
 
 --
--- Índices de tabela `user`
+-- Índices de tabela `items`
 --
-ALTER TABLE `user`
-  ADD PRIMARY KEY (`id_user`);
+ALTER TABLE `items`
+  ADD PRIMARY KEY (`id_items`),
+  ADD KEY `fk` (`id_descriptionfk`);
 
 --
 -- AUTO_INCREMENT para tabelas despejadas
 --
 
 --
--- AUTO_INCREMENT de tabela `user`
+-- AUTO_INCREMENT de tabela `items`
 --
-ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+ALTER TABLE `items`
+  MODIFY `id_items` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- Restrições para tabelas despejadas
+--
+
+--
+-- Restrições para tabelas `items`
+--
+ALTER TABLE `items`
+  ADD CONSTRAINT `fk` FOREIGN KEY (`id_descriptionfk`) REFERENCES `description` (`id_description`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

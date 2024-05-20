@@ -24,16 +24,18 @@ router.post("/select/item", (req, res) => {
 
 
 
-router.post("/register/cart", (req, res) => {
+router.post("/register/orders", (req, res) => {
 });
 
-router.post("/delete/cart", (req, res) => {
+router.post("/delete/orders", (req, res) => {
 });
 
-router.post("/update/cart", (req, res) => {
+router.post("/update/orders", (req, res) => {
 });
 
-router.post("/select/cart", (req, res) => {
+router.post("/select/orders", (req, res) => {
 });
+
+
 
 module.exports = router;
