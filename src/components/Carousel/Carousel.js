@@ -4,8 +4,7 @@ import "./Carousel.css";
 function Carousel() {
   return (
     <div>
-      <div className="pt-2"></div>
-      <h1 className=" justify-content-between align-items-center text-center pb-2">
+      <h1 className=" justify-content-between align-items-center text-center pt-3">
         DESTAQUES
       </h1>
       <div id="carouselExample" className="carousel slide">
@@ -162,7 +161,6 @@ function Carousel() {
                     </div>
                   </div>
                 </div>
-
                 <div className="col d-flex">
                   <div className="align-items-start">
                     <img id="items-carousel" alt="Camisa" src={shirt1} />
