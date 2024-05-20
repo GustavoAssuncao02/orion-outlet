@@ -5,11 +5,10 @@ function MenuCategories() {
   return (
     <div>
       <div>
-        <div className="container text-center align-items-top pt-3 pb-2">
+        <div className="container text-start align-items-top pt-3 pb-2">
           <div className="row align-items-start categories">
             <div className="col">
-              Camisas
-              <ul>
+              <ul >Camisas
                 <li>Camisa Premium</li>
                 <li>Camisa Grife</li>
                 <li>Camisa Peruana</li>
@@ -19,8 +18,7 @@ function MenuCategories() {
               </ul>
             </div>
             <div className="col">
-              Bermudas
-              <ul>
+              <ul>Bermudas
                 <li>Bermuda Jeans</li>
                 <li>Bermuda Dri-Fit</li>
                 <li>Bermuda Dri-Fit Nacional</li>
@@ -30,16 +28,14 @@ function MenuCategories() {
               </ul>
             </div>
             <div className="col">
-              Calças
-              <ul>
+              <ul>Calças
                 <li>Calça</li>
                 <li>Calça Jeans</li>
                 <li>Jogger</li>
               </ul>
             </div>
             <div className="col">
-              Inverno
-              <ul>
+              <ul>Inverno
                 <li>Suéter</li>
                 <li>Moleton Gola Careca</li>
               </ul>

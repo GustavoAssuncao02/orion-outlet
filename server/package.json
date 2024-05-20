@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/GustavoAssuncao02/orion-outlet/issues"
   },
-  "homepage": "https://github.com/GustavoAssuncao02/orion-outlet#readme"
+  "homepage": "https://github.com/GustavoAssuncao02/orion-outlet#readme",
+  "dependencies": {
+    "cors": "^2.8.5"
+  }
 }
