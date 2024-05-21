@@ -4,6 +4,12 @@
     border-radius: 1%;
     
 }
+.carousel-control-next-icon {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/271/271228.png") !important;
+}
+.carousel-control-prev-icon {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/271/271220.png") !important;
+}
 #card-items{
     height: auto;
     width: auto;
@@ -11,10 +17,6 @@
 
 .row{
     padding-left: 80px;
-}
-#button-carousel{
-    color: black !important;
-    background-color: black;
 }
 #price {
     
@@ -26,10 +28,4 @@
 #Product-name{
     font-size: 23px;
     font-family: Arial;
-}
-
-.carousel-example{
-    padding-left: 150px;
-    padding-right: 150px;
-    
 }

@@ -1,194 +1,74 @@
 import React from "react";
-import shirt1 from "../../assets/Images/Products/shirt1.png";
+import Shirt2 from "../../assets/Images/Products/shirt2.png";
+import Shirt3 from "../../assets/Images/Products/shirt3.png";
+import Shirt4 from "../../assets/Images/Products/shirt4.png";
+
 import "./Carousel.css";
 function Carousel() {
+  const shirtImages = [
+    { image: Shirt2, name: "Camiseta High Azul" },
+    { image: Shirt3, name: "Camiseta High Cinza" },
+    { image: Shirt4, name: "Camiseta High Branca" },
+    { image: Shirt2, name: "Camiseta High Azul" },
+    { image: Shirt3, name: "Camiseta High Cinza" },
+    { image: Shirt4, name: "Camiseta High Branca" },
+  ];
+  const chunkArray = (array, size) => {
+    const chunkedArr = [];
+    for (let i = 0; i < array.length; i += size) {
+      chunkedArr.push(array.slice(i, i + size));
+    }
+    return chunkedArr;
+  };
+
+  const chunkedShirtImages = chunkArray(shirtImages, 3);
+
   return (
-    <div>
-      <h1 className=" justify-content-between align-items-center text-center pt-3">
-        DESTAQUES
-      </h1>
-      <div id="carouselExample" className="carousel slide">
+    <div className="carousel-container">
+      <h1 className="text-center pt-3">DESTAQUES</h1>
+      <div id="carousel" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
-
-          <div className="carousel-item active ">
-            <div className="container">
-              <div className="row">
-                <div className="col d-flex">
-                  <div className="align-items-start">
-                    <img id="items-carousel" alt="Camisa" src={shirt1} />
-                    <div className="card-body">
-                      <p id="Product-name" className="card-text">
-                        Camiseta High
-                      </p>
-                      <div id="price" className="d-flex align-items-start">
-                        <div className="btn-group">
-                          <p className="card-text">R$80,00</p>
+          {chunkedShirtImages.map((row, index) => (
+            <div
+              key={index}
+              className={`carousel-item ${index === 0 ? "active" : ""}`}
+            >
+              <div className="container">
+                <div className="row">
+                  {row.map((shirt, shirtIndex) => (
+                    <div key={shirtIndex} className="col d-flex">
+                      <div className="align-items-start">
+                        <img
+                          id="items-carousel"
+                          src={shirt.image}
+                          alt="shirt"
+                        />
+                        <div className="card-body">
+                          <p id="Product-name" className="card-text">
+                            {shirt.name}
+                          </p>
+                          <div
+                            id="price"
+                            className="d-flex align-items-start"
+                          >
+                            <div className="btn-group">
+                              <p className="card-text">R$80,00</p>
+                            </div>
+                          </div>
+                          <p className="card-text">em até 2x sem juros</p>
                         </div>
                       </div>
-                      <p className="card-text">ou 2X de R$40,00</p>
                     </div>
-                  </div>
-                </div>
-
-                <div className="col d-flex">
-                  <div className="align-items-start">
-                    <img id="items-carousel" alt="Camisa" src={shirt1} />
-                    <div className="card-body">
-                      <p id="Product-name" className="card-text">
-                        Camiseta High
-                      </p>
-                      <div id="price" className="d-flex align-items-start">
-                        <div className="btn-group">
-                          <p className="card-text">R$80,00</p>
-                        </div>
-                      </div>
-                      <p className="card-text">ou 2X de R$40,00</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col d-flex">
-                  <div className="align-items-start">
-                    <img id="items-carousel" alt="Camisa" src={shirt1} />
-                    <div className="card-body">
-                      <p id="Product-name" className="card-text">
-                        Camiseta High
-                      </p>
-                      <div id="price" className="d-flex align-items-start">
-                        <div className="btn-group">
-                          <p className="card-text">R$80,00</p>
-                        </div>
-                      </div>
-                      <p className="card-text">ou 2X de R$40,00</p>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
             </div>
-          </div>
-
-          <div className="carousel-item">
-            <div className="container">
-              <div className="row">
-                <div className="col d-flex">
-                  <div className="align-items-start">
-                    <img id="items-carousel" alt="Camisa" src={shirt1} />
-                    <div className="card-body">
-                      <p id="Product-name" className="card-text">
-                        Camiseta High
-                      </p>
-                      <div id="price" className="d-flex align-items-start">
-                        <div className="btn-group">
-                          <p className="card-text">R$80,00</p>
-                        </div>
-                      </div>
-                      <p className="card-text">ou 2X de R$40,00</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col d-flex">
-                  <div className="align-items-start">
-                    <img id="items-carousel" alt="Camisa" src={shirt1} />
-                    <div className="card-body">
-                      <p id="Product-name" className="card-text">
-                        Camiseta High
-                      </p>
-                      <div id="price" className="d-flex align-items-start">
-                        <div className="btn-group">
-                          <p className="card-text">R$80,00</p>
-                        </div>
-                      </div>
-                      <p className="card-text">ou 2X de R$40,00</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col d-flex">
-                  <div className="align-items-start">
-                    <img id="items-carousel" alt="Camisa" src={shirt1} />
-                    <div className="card-body">
-                      <p id="Product-name" className="card-text">
-                        Camiseta High
-                      </p>
-                      <div id="price" className="d-flex align-items-start">
-                        <div className="btn-group">
-                          <p className="card-text">R$80,00</p>
-                        </div>
-                      </div>
-                      <p className="card-text">ou 2X de R$40,00</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div className="carousel-item ">
-            <div className="container">
-              <div className="row">
-                <div className="col d-flex">
-                  <div className="align-items-start">
-                    <img id="items-carousel" alt="Camisa" src={shirt1} />
-                    <div className="card-body">
-                      <p id="Product-name" className="card-text">
-                        Camiseta High
-                      </p>
-                      <div id="price" className="d-flex align-items-start">
-                        <div className="btn-group">
-                          <p className="card-text">R$80,00</p>
-                        </div>
-                      </div>
-                      <p className="card-text">ou 2X de R$40,00</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col d-flex">
-                  <div className="align-items-start">
-                    <img id="items-carousel" alt="Camisa" src={shirt1} />
-                    <div className="card-body">
-                      <p id="Product-name" className="card-text">
-                        Camiseta High
-                      </p>
-                      <div id="price" className="d-flex align-items-start">
-                        <div className="btn-group">
-                          <p className="card-text">R$80,00</p>
-                        </div>
-                      </div>
-                      <p className="card-text">ou 2X de R$40,00</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col d-flex">
-                  <div className="align-items-start">
-                    <img id="items-carousel" alt="Camisa" src={shirt1} />
-                    <div className="card-body">
-                      <p id="Product-name" className="card-text">
-                        Camiseta High
-                      </p>
-                      <div id="price" className="d-flex align-items-start">
-                        <div className="btn-group">
-                          <p className="card-text">R$80,00</p>
-                        </div>
-                      </div>
-                      <p className="card-text">ou 2X de R$40,00</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
+          ))}
         </div>
         <button
           className="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExample"
+          data-bs-target="#carousel"
           data-bs-slide="prev"
         >
           <span
@@ -201,7 +81,7 @@ function Carousel() {
         <button
           className="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExample"
+          data-bs-target="#carousel"
           data-bs-slide="next"
         >
           <span
