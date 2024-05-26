@@ -4,6 +4,7 @@ import Shirt3 from "../../assets/Images/Products/shirt3.png";
 import Shirt4 from "../../assets/Images/Products/shirt4.png";
 
 import "./Carousel.css";
+
 function Carousel() {
   const shirtImages = [
     { image: Shirt2, name: "Camiseta High Azul" },
@@ -13,6 +14,7 @@ function Carousel() {
     { image: Shirt3, name: "Camiseta High Cinza" },
     { image: Shirt4, name: "Camiseta High Branca" },
   ];
+
   const chunkArray = (array, size) => {
     const chunkedArr = [];
     for (let i = 0; i < array.length; i += size) {
@@ -25,7 +27,7 @@ function Carousel() {
 
   return (
     <div className="carousel-container">
-      <h1 className="text-center pt-3">DESTAQUES</h1>
+      <h1 className="text-center pt-3 pb-4">DESTAQUES</h1>
       <div id="carousel" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
           {chunkedShirtImages.map((row, index) => (
@@ -33,13 +35,13 @@ function Carousel() {
               key={index}
               className={`carousel-item ${index === 0 ? "active" : ""}`}
             >
-              <div className="container">
+              <div className="container ps-3">
                 <div className="row">
                   {row.map((shirt, shirtIndex) => (
                     <div key={shirtIndex} className="col d-flex">
                       <div className="align-items-start">
                         <img
-                          id="items-carousel"
+                          className="items-carousel"
                           src={shirt.image}
                           alt="shirt"
                         />
@@ -47,10 +49,7 @@ function Carousel() {
                           <p id="Product-name" className="card-text">
                             {shirt.name}
                           </p>
-                          <div
-                            id="price"
-                            className="d-flex align-items-start"
-                          >
+                          <div id="price" className="d-flex align-items-start">
                             <div className="btn-group">
                               <p className="card-text">R$80,00</p>
                             </div>

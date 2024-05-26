@@ -1,31 +1,52 @@
-#items-carousel {
-    padding-top: 20px;
-    width: 280px;
-    border-radius: 1%;
-    
-}
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Lexend+Exa:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 .carousel-control-next-icon {
-    background-image: url("https://cdn-icons-png.flaticon.com/512/271/271228.png") !important;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/271/271228.png") !important;
+  margin-left: 140px;
+  margin-bottom: 130px;
+
 }
 .carousel-control-prev-icon {
-    background-image: url("https://cdn-icons-png.flaticon.com/512/271/271220.png") !important;
-}
-#card-items{
-    height: auto;
-    width: auto;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/271/271220.png") !important;
+    margin-right: 170px;
+    margin-bottom: 140px;
 }
 
-.row{
-    padding-left: 80px;
-}
-#price {
-    
-    font-size: 18px;
-    font-weight: bold;
-    font-family: Arial;
+.row {
+  margin-left: -5px;
+  margin-right: -5px;
 }
 
-#Product-name{
-    font-size: 23px;
-    font-family: Arial;
+#Product-name {
+  font-size: 23px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+.card-text {
+  font-size: 18px;
+  font-family: Arial;
+  padding-left: 20px;
+}
+.carousel-container {
+  padding: 20px;
+}
+
+
+.carousel-item .col {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.items-carousel {
+  width: 90%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.card-body {
+  text-align: left;
 }
