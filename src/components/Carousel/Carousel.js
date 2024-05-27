@@ -27,7 +27,7 @@ function Carousel() {
 
   return (
     <div className="carousel-container">
-      <h1 className="text-center pt-3 pb-4">DESTAQUES</h1>
+      <h1 className="text-center pt-2 pb-4">DESTAQUES</h1>
       <div id="carousel" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
           {chunkedShirtImages.map((row, index) => (

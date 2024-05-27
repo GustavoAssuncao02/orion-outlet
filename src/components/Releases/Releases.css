@@ -1,7 +1,6 @@
 .background-container-releases {
     background-image: url('../../assets/Images/Commercial/Commercial2.png');
-    background-size: 70% auto;
-    background-position: center;
+    background-size: 70%;
     background-repeat: no-repeat;
     font-family: Arial;
     position: relative;
@@ -10,10 +9,17 @@
 
 .product {
     height: auto;
-    width: 350px;
+    width: 70%;
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.product:hover{
+    opacity: 90%;
+    transform: scale(1.05);
 }
 .price{
-    padding-right: 140px;
+    padding-right: 100px;
+    margin-top: 15px;
 }
 .price h1{
     font-size: 30px;
