@@ -5,7 +5,7 @@ import Shirt from "../../assets/Images/Products/OakleyWindbreaker/shirt1.png"
 import Shirt2 from "../../assets/Images/Products/OakleyWindbreaker/shirt2.png"
 import Shirt3 from "../../assets/Images/Products/OakleyWindbreaker/shirt3.png"
 import Shirt4 from "../../assets/Images/Products/OakleyWindbreaker/shirt4.png"
-
+import Lineup from '../../components/Lineup/Lineup.js'
 
 
 function Product() {
@@ -13,7 +13,7 @@ function Product() {
         <div>
             <NavBar />
             <div>
-                <div className=" pt-5 ">
+                <div className=" p-5 ">
                     <div className="row justify-content-center col-12">
                         <div className="col-2">
                             <img src={Shirt} alt='OakleyWindbreaker' className='pb-5' />
@@ -43,7 +43,7 @@ function Product() {
                 </div>
             </div>
 
-
+            <Lineup></Lineup>
         </div>
     )
 }
