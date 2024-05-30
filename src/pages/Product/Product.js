@@ -23,7 +23,7 @@ function Product() {
                         <div className="col-sm col-2">
                             <img src={Shirt4} alt='OakleyWindbreaker' />
                         </div>
-                        <div className="col-5 pe-5 text-center product-catalog ">
+                        <div className="col-5 pe-5 text-center product-catalog  d-block">
                             <h2>CORTA VENTO OAKLEY</h2>
                             <h5 className="pt-4">R$100,00</h5>
                             <h6>À Vista ou Cartão</h6>

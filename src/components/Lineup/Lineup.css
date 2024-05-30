@@ -15,10 +15,15 @@
     font-weight: 300;
     font-style: normal;
     align-items: flex-start;
-    padding-left: 20px;
+    padding-left: 0px;
+    text-align: center;
+}
+.center-price {
+    font-size: 23px;
+    text-align: center;
 }
 
-#price{
+.installments{
     font-size: 16px;
     text-align: center;
 }

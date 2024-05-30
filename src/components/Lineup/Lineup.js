@@ -51,12 +51,10 @@ function Lineup() {
                                                     <p id="product-name" className="card-text">
                                                         {shirt.name}
                                                     </p>
-                                                    <div  className="d-flex align-items-start">
-                                                        <div className="btn-group">
-                                                            <p id="price" className="card-text">R$80,00</p>
-                                                        </div>
+                                                    <div  className="d-flex align-items-start ">
                                                     </div>
-                                                    <p className="card-text">em até 2x sem juros</p>
+                                                    <p className="card-text center-price">R$80,00</p>
+                                                    <p className="card-text installments">em até 2x sem juros</p>
                                                 </div>
                                             </div>
                                         </div>
