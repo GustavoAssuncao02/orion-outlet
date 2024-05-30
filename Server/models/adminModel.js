@@ -11,7 +11,7 @@ export const createAdmin = (user, callback) => {
 };
 
 export const readAdmin = (callback) => {
-  const sql = "SELECT * FROM users";
+  const sql = "SELECT * FROM users WHERE is_admin = 1";
 
   db.query(sql, (err, results) => {
     if (err) return callback(err);
