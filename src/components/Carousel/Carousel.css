@@ -3,12 +3,12 @@
 .carousel-control-next-icon {
   background-image: url("https://cdn-icons-png.flaticon.com/512/271/271228.png") !important;
   margin-left: 140px;
-  margin-bottom: 130px;
+  margin-bottom: 140px;
 
 }
 .carousel-control-prev-icon {
   background-image: url("https://cdn-icons-png.flaticon.com/512/271/271220.png") !important;
-    margin-right: 170px;
+    margin-right: 150px;
     margin-bottom: 140px;
 }
 

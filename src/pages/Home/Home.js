@@ -4,7 +4,6 @@ import NavBar from '../../components/NavBar/NavBar';
 import Commercial from '../../components/Commercial/Commercial';
 import Carousel from '../../components/Carousel/Carousel';
 import Releases from '../../components/Releases/Releases';
-import Intersection from '../../components/Intersection/Intersection';
 import Advertisement from '../../components/Advertisement/Advertisement';
 import Location from '../../components/Location/Location';
 import MenuCategories from '../../components/MenuCategories/MenuCategories';
@@ -17,7 +16,6 @@ const Home = () => {
       <Commercial />
       <Carousel />
       <Releases />
-      <Intersection />
       <Advertisement />
       <h1 className=" justify-content-between align-items-center text-center pt-5 pb-5">
         Localização
