@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This project is a marketplace for a local city store, aimed at selling clothes and accessories in a simple and dynamic manner",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "test": "Perform-test",
     "start": "node server.js"
