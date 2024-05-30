@@ -43,6 +43,7 @@ function Product() {
                 </div>
             </div>
             <Lineup></Lineup>
+            <div className='p-5'></div>
             <Footer></Footer>
         </div>
     )

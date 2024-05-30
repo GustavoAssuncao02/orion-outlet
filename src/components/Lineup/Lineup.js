@@ -28,9 +28,9 @@ function Lineup() {
 
     const chunkedShirtImages = chunkArray(shirtImages, 4);
     return (
-        <div className="carousel-container">
-            <h1 className="text-center pt-2 pb-4">DESTAQUES</h1>
-            <div id="carousel" className="carousel slide" data-bs-ride="carousel">
+        <div className="carousel-container pb-5">
+            <h1 className="text-center pt-2 pb-4">PRODUTOS RELACIONADOS</h1>
+            <div id="carousel" className="carousel slide pb-5" data-bs-ride="carousel">
                 <div className="carousel-inner">
                     {chunkedShirtImages.map((row, index) => (
                         <div
