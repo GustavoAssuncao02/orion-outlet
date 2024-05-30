@@ -1,10 +1,10 @@
-const cors = require('cors');
+import cors from 'cors';
 
 const corsOptions = {
-  origin: 'http://localhost:3000 ', // Allows only the specified origin
+  origin: 'http://localhost:3000',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   allowedHeaders: 'Content-Type, Authorization',
   maxAge: 86400,
 };
-    
-module.exports = cors(corsOptions);
+
+export default cors(corsOptions);
