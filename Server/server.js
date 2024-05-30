@@ -1,13 +1,13 @@
 import express from 'express';
 import { json } from 'express';
-import cors from './middlewares/Middlewares.js'; 
+import corsMiddleware from './middlewares/Middlewares.js'; 
 import './db.js';
 import routes from './router/Router.js';
 
 const app = express();
 const port = 4000;
 
-app.use(cors);
+app.use(corsMiddleware);
 app.use(json());
 app.use('/api', routes);
 

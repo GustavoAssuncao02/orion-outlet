@@ -7,4 +7,6 @@ const corsOptions = {
   maxAge: 86400,
 };
 
-export default cors(corsOptions);
+const corsMiddleware = cors(corsOptions);
+
+export default corsMiddleware;

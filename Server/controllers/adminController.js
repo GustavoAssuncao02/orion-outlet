@@ -1,4 +1,4 @@
-import * as adminModel from "../models/AdminModel"
+import * as adminModel from "../models/AdminModel.js"
 
 export const createAdmin = (req, res) => {
   const admin = req.body;

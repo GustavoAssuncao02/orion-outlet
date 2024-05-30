@@ -2,6 +2,7 @@ import { createConnection } from 'mysql2';
 
 const db = createConnection({
   host: 'localhost',
+  port: '3307',
   user: 'root',
   password: '',
   database: 'orion_outlet',

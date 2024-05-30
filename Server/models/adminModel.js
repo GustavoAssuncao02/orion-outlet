@@ -1,4 +1,4 @@
-import db from "../db";
+import db from '../db.js';
 
 export const createAdmin = (user, callback) => {
   const sql = "INSERT INTO users SET ?";
