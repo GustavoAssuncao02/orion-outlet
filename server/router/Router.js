@@ -1,6 +1,5 @@
 import { Router } from 'express';
 import * as AdminController from "../controllers/AdminController"
-
 const router = Router();
 
 router.get('/', (req, res) => {

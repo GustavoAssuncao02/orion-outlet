@@ -18,7 +18,7 @@ export const readAdmin = (req, res) => {
       console.error("Error reading admin user:", err);
       res.status(500).send(err);
     } else {
-      res.status(200).send(results);
+      res.status(200).send(result);
     }
   });
 };
