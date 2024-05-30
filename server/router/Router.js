@@ -1,41 +1,15 @@
-const express = require('express');
-const router = express.Router();
+import { Router } from 'express';
+import * as AdminController from "../controllers/adminController.js"
+
+const router = Router();
 
 router.get('/', (req, res) => {
   res.send('Hello World');
 });
 
-router.post("/login", (req, res) => {
-});
+router.post('/admin', AdminController.createAdmin);
+router.get('/admin', AdminController.readAdmin);
+router.put('/admin/', AdminController.updateAdmin);
+router.delete('/admin/', AdminController.deleteAdmin);
 
-router.post("/register/item", (req, res) => {
-});
-
-router.post("/delete/item", (req, res) => {
-});
-
-router.post("/update/item", (req, res) => {
-});
-
-router.post("/select/item", (req, res) => {
-});
-
-
-
-
-
-router.post("/register/orders", (req, res) => {
-});
-
-router.post("/delete/orders", (req, res) => {
-});
-
-router.post("/update/orders", (req, res) => {
-});
-
-router.post("/select/orders", (req, res) => {
-});
-
-
-
-module.exports = router;
+export default router;
