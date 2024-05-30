@@ -6,7 +6,7 @@ import Shirt2 from "../../assets/Images/Products/OakleyWindbreaker/shirt2.png"
 import Shirt3 from "../../assets/Images/Products/OakleyWindbreaker/shirt3.png"
 import Shirt4 from "../../assets/Images/Products/OakleyWindbreaker/shirt4.png"
 import Lineup from '../../components/Lineup/Lineup.js'
-
+import Footer from '../../components/Footer/Footer.js'
 
 function Product() {
     return (
@@ -42,8 +42,8 @@ function Product() {
                     </div>
                 </div>
             </div>
-
             <Lineup></Lineup>
+            <Footer></Footer>
         </div>
     )
 }
