@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 20/05/2024 às 02:11
+-- Tempo de geração: 30/05/2024 às 23:37
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -24,16 +24,17 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `items`
+-- Estrutura para tabela `descriptions`
 --
 
-CREATE TABLE `items` (
-  `id_items` int(11) NOT NULL,
-  `name` varchar(45) NOT NULL,
-  `image` blob NOT NULL,
-  `quantity` int(200) NOT NULL,
-  `category` varchar(45) NOT NULL,
-  `id_descriptionfk` int(11) NOT NULL
+CREATE TABLE `descriptions` (
+  `id_description` int(11) NOT NULL,
+  `color` varchar(45) NOT NULL,
+  `size` varchar(5) NOT NULL,
+  `material` varchar(35) NOT NULL,
+  `style` varchar(200) NOT NULL,
+  `price_old` varchar(50) NOT NULL,
+  `price` varchar(45) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -41,31 +42,20 @@ CREATE TABLE `items` (
 --
 
 --
--- Índices de tabela `items`
+-- Índices de tabela `descriptions`
 --
-ALTER TABLE `items`
-  ADD PRIMARY KEY (`id_items`),
-  ADD KEY `fk` (`id_descriptionfk`);
+ALTER TABLE `descriptions`
+  ADD PRIMARY KEY (`id_description`);
 
 --
 -- AUTO_INCREMENT para tabelas despejadas
 --
 
 --
--- AUTO_INCREMENT de tabela `items`
+-- AUTO_INCREMENT de tabela `descriptions`
 --
-ALTER TABLE `items`
-  MODIFY `id_items` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- Restrições para tabelas despejadas
---
-
---
--- Restrições para tabelas `items`
---
-ALTER TABLE `items`
-  ADD CONSTRAINT `fk` FOREIGN KEY (`id_descriptionfk`) REFERENCES `description` (`id_description`);
+ALTER TABLE `descriptions`
+  MODIFY `id_description` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
