@@ -1,8 +1,8 @@
-import * as adminModel from "../models/adminModel.js"
+import * as userModel from "../models/userModel.js"
 
-export const createAdmin = (req, res) => {
+export const createUser = (req, res) => {
   const admin = req.body;
-  adminModel.createAdmin(admin, (err, result) => {
+  userModel.createUser(admin, (err, result) => {
     if (err) {
       console.error("Error creating admin user ", err);
       res.status(500).send(err);
@@ -12,8 +12,8 @@ export const createAdmin = (req, res) => {
   });
 };
 
-export const readAdmin = (req, res) => {
-  adminModel.readAdmin((err, result) => {
+export const readUser = (req, res) => {
+  userModel.readUser((err, result) => {
     if (err) {
       console.error("Error reading admin user:", err);
       res.status(500).send(err);
@@ -23,9 +23,9 @@ export const readAdmin = (req, res) => {
   });
 };
 
-export const updateAdmin = (req, res) => {
+export const updateUser = (req, res) => {
   const newData = req.body;
-  adminModel.updateAdmin(newData, (err, result) => {
+  userModel.updateUser(newData, (err, result) => {
     if (err) {
       console.error("Error updating admin user:", err);
       res.status(500).send(err);
@@ -35,8 +35,8 @@ export const updateAdmin = (req, res) => {
   });
 };
 
-export const deleteAdmin = (req, res) => {
-  adminModel.deleteAdmin((err, result) => {
+export const deleteUser = (req, res) => {
+  userModel.deleteUser((err, result) => {
     if (err) {
       console.error("Error deleting admin user:", err);
       res.status(500).send(err);
