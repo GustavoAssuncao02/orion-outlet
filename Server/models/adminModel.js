@@ -5,7 +5,7 @@ export const createAdmin = (user, callback) => {
 
   db.query(sql, user, (err, result) => {
     if (err) return callback(err);
-    callback(null, results);
+    callback(null, result);
   });
 };
 
