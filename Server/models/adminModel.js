@@ -4,9 +4,8 @@ export const createAdmin = (user, callback) => {
   const sql = "INSERT INTO users SET ?";
 
   db.query(sql, user, (err, result) => {
-    if (err) {
-      return callback(err);
-    }
+    if (err) return callback(err);
+    callback(null, results);
   });
 };
 
