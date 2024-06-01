@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import * as AdminController from "../controllers/adminController.js"
 import * as UserController from "../controllers/userController.js"
+import * as ItemController from "../controllers/itemController.js"
 const router = Router();
 
 router.get('/', (req, res) => {
@@ -16,5 +17,10 @@ router.post('/user', UserController.createUser);
 router.get('/user', UserController.readUser);
 router.put('/user/', UserController.updateUser);
 router.delete('/user/', UserController.deleteUser);
+
+router.post('/item', ItemController.createItem);
+router.get('/item', ItemController.readItem);
+router.put('/item/', ItemController.updateItem);
+router.delete('/item/', ItemController.deleteItem);
 
 export default router;
