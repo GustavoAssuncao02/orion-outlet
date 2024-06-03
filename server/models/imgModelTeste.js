@@ -3,10 +3,10 @@ const { google } = require('googleapis')
 
 const GOOGLE_API_FOLDER_ID = 'substituir'
 
-async function uploadFile(){
+async function uploadFile(name,img ){
     try{
         const auth = new google.auth.GoogleAuth({
-            keyFile: './googlekey.json',
+            keyFile: './googlekey.json', // still need to create the file
             scopes: ['https://www.googleapis.com/auth/drive']
         })
 
@@ -16,13 +16,13 @@ async function uploadFile(){
         })
 
         const fileMetaData = {
-            'name': 'substituir.png',
+            'name': name,
             'parents': [GOOGLE_API_FOLDER_ID]
         }
 
         const media = {
             mimeType: 'image/jpg',
-            body: fs.createReadStream('./snow.jpg')
+            body: fs.createReadStream(img)
         }
 
         const response = await driveService.files.create({
@@ -31,6 +31,7 @@ async function uploadFile(){
             field: 'id'
         })
         return response.data.id
+        //save this id in database
 
     }catch(err){
         console.log('Upload file error', err)
