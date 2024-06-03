@@ -21,7 +21,7 @@ async function uploadFile(name,img ){
         }
 
         const media = {
-            mimeType: 'image/jpg',
+            mimeType: 'image/*',
             body: fs.createReadStream(img)
         }
 
