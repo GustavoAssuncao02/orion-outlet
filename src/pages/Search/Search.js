@@ -84,10 +84,10 @@ function Search() {
                         </div>
                     </div>
                     <div className="col-10">
-                        Você procurou por:
+                        Você procurou por: 
                         <div>
                             <div className="container">
-                                <h1 className="text-center pt-2 pb-4">DESTAQUES</h1>
+                                <h1 className="text-center pt-2 pb-4"></h1>
                                 <div id="carousel" className="">
                                     <div className="">
                                         {paddedChunkedShirtImages.map((row, index) => (
