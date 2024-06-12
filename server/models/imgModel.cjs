@@ -1,12 +1,11 @@
 const fs = require('fs');
 const { google } = require('googleapis')
-
-const GOOGLE_API_FOLDER_ID = 'substituir'
+const GOOGLE_API_FOLDER_ID = '1g9gSvyra3w5wgNyKzoSe8lCJ7Kz80Nup'
 
 async function uploadFile(name,img ){
     try{
         const auth = new google.auth.GoogleAuth({
-            keyFile: './googlekey.json', // still need to create the file
+            keyFile: './Google.json',
             scopes: ['https://www.googleapis.com/auth/drive']
         })
 
@@ -38,7 +37,7 @@ async function uploadFile(name,img ){
     }
 }
 
-uploadFile().then(data => {
+uploadFile('name', "./teste.png").then(data => {
     console.log(data)
     
 })
