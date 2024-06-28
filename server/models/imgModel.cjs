@@ -83,6 +83,7 @@ async function downloadFile(fileId) {
 /*
 downloadFile('1JJyoJBZz_lw2Vx9upVq8u33M7ML0Bn13').then(data => {
     console.log('File downloaded successfully:', data);
+    return data;
     // You can now use the buffer 'data' as needed
 }).catch(err => {
     console.log(err);
