@@ -12,3 +12,9 @@
     list-style-type: none;
     text-align: left;
 }
+
+.title{
+    color: black;
+    opacity: 65%;
+    font-weight: bold;
+}
