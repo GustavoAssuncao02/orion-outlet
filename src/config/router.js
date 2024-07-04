@@ -6,6 +6,7 @@ import Location from "../pages/LocationPage/LocationPage"
 import Login from '../pages/Login/Login'
 import Product from '../pages/Product/Product'
 import Search from '../pages/Search/Search'
+import Admin from "../pages/Admin/Admin"
 
 function router() {
     return (
@@ -17,6 +18,7 @@ function router() {
                 <Route path="/product" element={< Product />} />
                 <Route path="/login-admin" element={< Login />} />
                 <Route path="/Search" element={< Search />} />
+                <Route path="/Admin" element={< Admin/>} />
             </Routes>
         </BrowserRouter>
 
