@@ -1,0 +1,61 @@
+
+
+.container-AddItem {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-AddItem h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container-AddItem form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-AddItem label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+input[type="color"],
+.container-AddItem select {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.container-AddItem fieldset {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.container-AddItem legend {
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.container-AddItem button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.container-AddItem button:hover {
+    background-color: #218838;
+}
