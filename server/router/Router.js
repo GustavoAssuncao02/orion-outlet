@@ -2,6 +2,7 @@ import { Router } from 'express';
 import * as AdminController from "../controllers/adminController.js"
 import * as UserController from "../controllers/userController.js"
 import * as ItemController from "../controllers/itemController.js"
+import * as imgController from "../controllers/imgController.js"
 const router = Router();
 
 router.get('/', (req, res) => {
@@ -23,4 +24,6 @@ router.get('/item', ItemController.readItem);
 router.put('/item/', ItemController.updateItem);
 router.delete('/item/', ItemController.deleteItem);
 
+
+router.post('/img', imgController.uploadCamisaPremium);
 export default router;
