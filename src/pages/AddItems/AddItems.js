@@ -8,50 +8,63 @@ function AddItems() {
                 <h1>Adicionar Item</h1>
                 <form>
                     <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required/>
+                    <input type="text" id="nome" name="nome" required />
 
-                        <label for="quantidade">Quantidade:</label>
-                        <input type="number" id="quantidade" name="quantidade" min="1" required/>
+                    <label for="quantidade">Quantidade:</label>
+                    <input type="number" id="quantidade" name="quantidade" min="1" required />
 
-                            <label for="categoria">Categoria:</label>
-                            <select id="categoria" name="categoria" required>
-                                <option value="eletronicos">Camisa</option>
-                                <option value="roupas">Bermuda</option>
-                                <option value="alimentos">calças</option>
-                                <option value="livros">Inverno</option>
-                            </select>
+                    <label for="categoria">Categoria:</label>
+                    <select id="categoria" name="categoria" required>
+                        <option value="eletronicos">Camisa Premium</option>
+                        <option value="roupas">Camisa Grife</option>
+                        <option value="alimentos">Camisa Peruana</option>
+                        <option value="livros">Camisa Stret Wear</option>
+                        <option value="eletronicos">Camisa de Time</option>
+                        <option value="roupas">Camisa Regata</option>
+                        <option value="alimentos">Bermuda Jeans</option>
+                        <option value="livros">Bermuda Dri-Fit</option>
+                        <option value="eletronicos">Bermuda Nacional</option>
+                        <option value="roupas">Bermuda Cargo High</option>
+                        <option value="alimentos">Bermuda Tactel</option>
+                        <option value="livros">Bermuda Brim Lacost</option>
+                        <option value="eletronicos">Calça</option>
+                        <option value="roupas">Calça Jeans</option>
+                        <option value="alimentos">Carça Jogger</option>
+                        <option value="livros">Suéter</option>
+                        <option value="eletronicos">Moleton Gola Careca</option>
+                    </select>
 
-                            <label for="imagem">Imagem:</label>
-                            <input type="file" id="imagem" name="imagem" multiple accept="image/*"/>
+                    <label for="imagem">Imagem:</label>
+                    <input type="file" id="imagem" name="imagem" multiple accept="image/*" />
 
-                                <label for="cor">Cor:</label>
-                                <input type="color" id="cor" name="cor" multiple/>
+                    <label for="cor">Cor:</label>
+                    <input type="color" id="cor" name="cor" multiple />
 
-                                    <fieldset>
-                                        <legend>Tamanhos:</legend>
-                                        <label><input type="checkbox" name="tamanhos" value="pp"/> PP</label>
-                                        <label><input type="checkbox" name="tamanhos" value="p"/> P</label>
-                                        <label><input type="checkbox" name="tamanhos" value="m"/> M</label>
-                                        <label><input type="checkbox" name="tamanhos" value="g"/> G</label>
-                                        <label><input type="checkbox" name="tamanhos" value="gg"/> GG</label>
-                                    </fieldset>
+                    <fieldset>
+                        <legend>Tamanhos:</legend>
+                        <label><input type="checkbox" name="tamanhos" value="pp" /> PP</label>
+                        <label><input type="checkbox" name="tamanhos" value="p" /> P</label>
+                        <label><input type="checkbox" name="tamanhos" value="m" /> M</label>
+                        <label><input type="checkbox" name="tamanhos" value="g" /> G</label>
+                        <label><input type="checkbox" name="tamanhos" value="gg" /> GG</label>
+                    </fieldset>
 
-                                    <label for="estilo">Estilo:</label>
-                                    <select id="estilo" name="estilo" required>
-                                        <option value="casual">Casual</option>
-                                        <option value="formal">Formal</option>
-                                        <option value="esportivo">Esportivo</option>
-                                        <option value="social">Social</option>
-                                    </select>
+                    <label for="estilo">Estilo:</label>
+                    <select id="estilo" name="estilo" required>
+                        <option value="casual">Casual</option>
+                        <option value="formal">Formal</option>
+                        <option value="esportivo">Esportivo</option>
+                        <option value="social">Social</option>
+                    </select>
 
-                                    <label for="preco">Preço:</label>
-                                    <input type="number" id="preco" name="preco" min="0" step="0.01" required/>
+                    <label for="preco">Preço:</label>
+                    <input type="number" id="preco" name="preco" min="0" step="0.01" required />
 
-                                        <button type="submit">Adicionar Item</button>
-                                    </form>
-                                </div>
-                            </div>
-                            )
+                    <button type="submit">Adicionar Item</button>
+                </form>
+            </div>
+        </div>
+    )
 }
 
-                            export default AddItems
+export default AddItems
