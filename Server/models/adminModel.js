@@ -10,7 +10,7 @@ export const createAdmin = (user, callback) => {
 };
 
 export const readAdmin = (callback) => {
-  const sql = "SELECT * FROM users WHERE is_admin = 1";
+  const sql = "SELECT * FROM users WHERE is_admin = 1";//fix
 
   db.query(sql, (err, results) => {
     if (err) return callback(err);
@@ -19,7 +19,7 @@ export const readAdmin = (callback) => {
 };
 
 export const updateAdmin = (newData, callback) => {
-  const sql = "UPDATE users SET ? WHERE is_admin = 1";
+  const sql = "UPDATE users SET ? WHERE is_admin = 1";//fix
 
   db.query(sql, newData, (err, result) => {
     if (err) return callback(err);
@@ -28,7 +28,7 @@ export const updateAdmin = (newData, callback) => {
 };
 
 export const deleteAdmin = (callback) => {
-  const sql = "DELETE FROM users WHERE is_admin = 1";
+  const sql = "DELETE FROM users WHERE is_admin = 1";//fix
   db.query(sql, (err, result) => {
     if (err) return callback(err);
     callback(null, result);
