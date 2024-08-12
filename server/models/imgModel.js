@@ -3,10 +3,10 @@ import multer from 'multer';
 
 
 export const uploadCamisaPremium = (img) => {
-    const image = img
+
     const storage = multer.diskStorage({
         destination: (req, file, cb) => {
-            const uploadPath = "../../../src/assets/Images/Products/Camisa/Camisa Premium/";
+            const uploadPath = `../../../src/assets/Images/Products/Camisa/Camisa Premium/`;
             cb(null, uploadPath);
         },
         filename: (req, file, cb) => {

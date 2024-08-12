@@ -1,5 +1,4 @@
 import * as imgModel from "../models/imgModel.js";
-import path from 'path';
 
 export const uploadCamisaPremium = (req, res) => {
     const conteudo = req
