@@ -6,9 +6,9 @@ function AddItems() {
         event.preventDefault();
 
         const formData = new FormData();
-        const fileInput = document.querySelector('#imagem'); // ID do input file
+        const fileInput = document.querySelector('#imagem');
         const file = fileInput.files[0];
-        const uploadPath = '../../../src/assets/Images/Products/Camisa/Camisa Premium'; // Defina o caminho desejado aqui
+        const uploadPath = '../../../src/assets/Images/Products/Camisa/Camisa Premium'; 
 
         formData.append('file', file);
         formData.append('uploadPath', uploadPath);
