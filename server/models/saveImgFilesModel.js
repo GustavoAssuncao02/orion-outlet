@@ -1,6 +1,5 @@
 import db from '../db.js';
-const multer = require('multer');
-const path = require('path');
+import multer from 'multer';
 
 
 
