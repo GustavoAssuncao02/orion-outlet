@@ -8,15 +8,12 @@ function AddItems() {
         const formData = new FormData();
         const fileInput = document.querySelector('#imagem');
         const file = fileInput.files[0];
-        const uploadPath = '../../../src/assets/Images/Products/Camisa/Camisa Premium'; 
 
         formData.append('file', file);
-        formData.append('uploadPath', uploadPath);
-
         try {
-            const response = await fetch('http://localhost:4000/img/', {
+            const response = await fetch('http://localhost:4000/api/img', {
                 method: 'POST',
-                body: formData,
+                body: file,
             });
 
             if (!response.ok) {

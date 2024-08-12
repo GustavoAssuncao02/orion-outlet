@@ -1,6 +1,6 @@
 import express from 'express';
 import { json } from 'express';
-import corsMiddleware from './middlewares/Middlewares.js'; 
+import corsMiddleware from './middlewares/Middlewares.js';
 import './db.js';
 import routes from './router/Router.js';
 

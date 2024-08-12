@@ -25,5 +25,5 @@ router.put('/item/', ItemController.updateItem);
 router.delete('/item/', ItemController.deleteItem);
 
 
-router.post('/img/', imgController.uploadCamisaPremium);
+router.post('/img', imgController.uploadCamisaPremium);
 export default router;

@@ -1,10 +1,9 @@
-import * as imgModel from "../models/saveImgFilesModel.js";
+import * as imgModel from "../models/imgModel.js";
 import path from 'path';
 
 export const uploadCamisaPremium = (req, res) => {
-    const uploadPath = req.body.uploadPath || path.join(__dirname, '../../../src/assets/Images/Products/Camisa/Camisa Premium');
-    const upload = imgModel.uploadCamisaPremium(uploadPath);
-
+    const conteudo = req
+    const upload = imgModel.uploadCamisaPremium(conteudo);
     upload(req, res, (err) => {
         if (err) {
             console.error("Error uploading image:", err);
