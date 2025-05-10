@@ -15,8 +15,9 @@ function Commercial() {
     { label: "Instagram", url: "https://www.instagram.com/orionoutlet_/" },
     { label: "Facebook", url: "https://www.facebook.com/oironoutlet3066" },
   ];
+
   useEffect(() => {
-    ScrollReveal().reveal(".reveal", {
+    ScrollReveal().reveal(".commercial-reveal", {
       origin: "left",
       distance: "20px",
       duration: 2000,
@@ -24,7 +25,7 @@ function Commercial() {
       easing: "cubic-bezier(0, 0, 0, 1)",
       reset: true,
     });
-    ScrollReveal().reveal(".reveal-right", {
+    ScrollReveal().reveal(".commercial-reveal-right", {
       origin: "right",
       distance: "20px",
       duration: 2000,
@@ -35,27 +36,27 @@ function Commercial() {
   });
 
   return (
-    <div className="background-container">
-      <div className="reveal">
+    <div className="commercial-background-container">
+      <div className="commercial-reveal">
         <h1>BEM VINDO A</h1>
-        <h3>ORION OUTLET</h3>
+        <h3>STREET CLOTHES</h3>
       </div>
       <div
         id="social-midia-text"
-        className="d-flex flex-column align-items-end text-white social-midia-text col-12 reveal-right"
+        className="d-flex flex-column align-items-end text-white commercial-social-midia-text col-12 commercial-reveal-right"
       >
         <p>Nossas Redes Sociais</p>
-        <div className="social-midias">
+        <div className="commercial-social-midias">
           {links.map((link, index) => (
             <a key={index} href={link.url}>
               {link.label === "Whatsapp" ? (
-                <IoLogoWhatsapp className="social-icon-whatsapp" />
+                <IoLogoWhatsapp className="commercial-social-icon-whatsapp" />
               ) : null}
               {link.label === "Instagram" ? (
-                <AiFillInstagram className="social-icon-instagram" />
+                <AiFillInstagram className="commercial-social-icon-instagram" />
               ) : null}
               {link.label === "Facebook" ? (
-                <FaFacebook className="social-icon" />
+                <FaFacebook className="commercial-social-icon" />
               ) : null}
             </a>
           ))}

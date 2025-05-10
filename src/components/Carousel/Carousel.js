@@ -23,11 +23,12 @@ function Carousel() {
     return chunkedArr;
   };
 
-  const chunkedShirtImages = chunkArray(shirtImages, 3);
+  // Alterando para 4 imagens por linha
+  const chunkedShirtImages = chunkArray(shirtImages, 4);
 
   return (
-    <div className="carousel-container">
-      <h1 className="text-center pt-2 pb-4">DESTAQUES</h1>
+    <div className="carousel-custom-container">
+      <h1 className="carousel-custom-title text-center pt-2 pb-4">DESTAQUES</h1>
       <div id="carousel" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
           {chunkedShirtImages.map((row, index) => (
@@ -38,23 +39,25 @@ function Carousel() {
               <div className="container ps-3">
                 <div className="row">
                   {row.map((shirt, shirtIndex) => (
-                    <div key={shirtIndex} className="col d-flex">
-                      <div className="align-items-start">
+                    <div key={shirtIndex} className="col-3 d-flex"> {/* Ajustado para 4 colunas */}
+                      <div className="carousel-custom-card align-items-start">
                         <img
-                          className="items-carousel"
+                          className="carousel-custom-image"
                           src={shirt.image}
                           alt="shirt"
                         />
-                        <div className="card-body">
-                          <p id="Product-name" className="card-text">
+                        <div className="carousel-custom-card-body">
+                          <p className="carousel-custom-product-name">
                             {shirt.name}
                           </p>
-                          <div id="price" className="d-flex align-items-start">
+                          <div className="carousel-custom-price d-flex align-items-start">
                             <div className="btn-group">
-                              <p className="card-text">R$80,00</p>
+                              <p className="carousel-custom-text">R$80,00</p>
                             </div>
                           </div>
-                          <p className="card-text">em até 2x sem juros</p>
+                          <p className="carousel-custom-text">
+                            em até 2x sem juros
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -71,8 +74,7 @@ function Carousel() {
           data-bs-slide="prev"
         >
           <span
-            id="button-carousel"
-            className="carousel-control-prev-icon"
+            className="carousel-custom-button carousel-control-prev-icon"
             aria-hidden="true"
           ></span>
           <span className="visually-hidden">Previous</span>
@@ -84,8 +86,7 @@ function Carousel() {
           data-bs-slide="next"
         >
           <span
-            id="button-carousel"
-            className="carousel-control-next-icon"
+            className="carousel-custom-button carousel-control-next-icon"
             aria-hidden="true"
           ></span>
           <span className="visually-hidden">Next</span>
