@@ -9,12 +9,10 @@ import Shirt02Frente from "../../../assets/Images/shirts/shirt09.png";
 import Shirt02Back from "../../../assets/Images/shirts/shirt09back.png";
 import Shirt02Logo from "../../../assets/Images/shirts/shirt09logo.png";
 import Shirt02Manga from "../../../assets/Images/shirts/shirt09manga.png";
-import ShirtBg03 from "../../../assets/Images/shirts/bgremove/shirt03bg.png";
 import Shirt04 from "../../../assets/Images/shirts/shirt04.png";
 import Shirt04Back from "../../../assets/Images/shirts/shirt04Back.png";
 import Shirt04Details from "../../../assets/Images/shirts/shirt04Details.png";
 import Shirt04Verse from "../../../assets/Images/shirts/shirt04verse.png";
-import ShirtBg05 from "../../../assets/Images/shirts/bgremove/shirt05bg.png";
 import Shirt06 from "../../../assets/Images/shirts/shirt06.png";
 import Shirt06Logo from "../../../assets/Images/shirts/shirt06logo.jpg";
 import Shirt06Model from "../../../assets/Images/shirts/shirt06model.webp";
@@ -23,6 +21,14 @@ import Shirt06Red from "../../../assets/Images/shirts/shirt06Red.png";
 import Shirt06RedLogo from "../../../assets/Images/shirts/shirt06RedLogo.png";
 import ShirtBg07 from "../../../assets/Images/shirts/bgremove/shirt07bg.png";
 import ShirtBg08 from "../../../assets/Images/shirts/bgremove/shirt08bg.png";
+import Shirt12 from "../../../assets/Images/shirts/shirt12.webp";
+import Shirt12Back from "../../../assets/Images/shirts/shirt12back.webp";
+import Shirt12Details from "../../../assets/Images/shirts/shirt12details.webp";
+import Shirt12Gola from "../../../assets/Images/shirts/shirt12gola.webp";
+import Shirt03 from "../../../assets/Images/shirts/shirt02.png";
+import Shirt03Back from "../../../assets/Images/shirts/shirt02back.webp";
+import Shirt03Details from "../../../assets/Images/shirts/shirt02details.webp";
+import Shirt03Logo from "../../../assets/Images/shirts/shirt02logo.webp";
 
 const shirts = [
   {
@@ -34,7 +40,8 @@ const shirts = [
     },
     sizes: ["P", "G", "GG"],
     colors: ["#455C74"],
-    description: "",
+    description:
+      "Material: 70% algodão, 30% poliéster. Detalhes da roupa: Franja irregular.",
   },
   {
     id: 2,
@@ -53,11 +60,12 @@ const shirts = [
     name: "",
     price: "",
     imagesByColor: {
-      default: [ShirtBg03],
+      default: [Shirt03, Shirt03Back, Shirt03Details, Shirt03Logo],
     },
     sizes: [],
     colors: [],
-    description: "",
+    description:
+      "Material: 70% algodão, 30% poliéster. Detalhes da roupa: Franja irregular.",
   },
   {
     id: 4,
@@ -68,18 +76,20 @@ const shirts = [
     },
     sizes: [],
     colors: ["#BF3131"],
-    description: "",
+    description:
+      "Material: 70% algodão, 30% poliéster. Detalhes da roupa: Franja irregular.",
   },
   {
     id: 5,
     name: "",
     price: "",
     imagesByColor: {
-      default: [ShirtBg05],
+      default: [Shirt12, Shirt12Back, Shirt12Details, Shirt12Gola],
     },
-    sizes: [],
-    colors: [],
-    description: "",
+    sizes: ["P", "M", "G"],
+    colors: ["#9B7D57"],
+    description:
+      "Material: 70% algodão, 30% poliéster. Detalhes da roupa: Franja irregular.",
   },
   {
     id: 6,

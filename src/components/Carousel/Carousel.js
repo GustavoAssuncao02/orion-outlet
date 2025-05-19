@@ -4,7 +4,7 @@ import ShirtBg01 from "../../assets/Images/shirts/bgremove/shirt01bg.webp";
 import ShirtBg02 from "../../assets/Images/shirts/bgremove/shirt02-3bg.png";
 import ShirtBg03 from "../../assets/Images/shirts/bgremove/shirt03bg.png";
 import ShirtBg04 from "../../assets/Images/shirts/bgremove/shirt04bg.png";
-import ShirtBg05 from "../../assets/Images/shirts/bgremove/shirt05bg.png";
+import ShirtBg05 from "../../assets/Images/shirts/bgremove/shirt12bg.png";
 import ShirtBg06 from "../../assets/Images/shirts/bgremove/shirt06bg.png";
 import ShirtBg07 from "../../assets/Images/shirts/bgremove/shirt07bg.png";
 import ShirtBg08 from "../../assets/Images/shirts/bgremove/shirt08bg.png";
@@ -28,7 +28,7 @@ function Carousel() {
     {
       id: 3,
       image: ShirtBg03,
-      name: "Flame PU Patchwork Tee",
+      name: "Estampa de estrela espinhosa",
       price: "254,98",
     },
     {
@@ -40,8 +40,8 @@ function Carousel() {
     {
       id: 5,
       image: ShirtBg05,
-      name: "13 V-Neck Tee Red",
-      price: "254,98",
+      name: "Fringe Washed Short Sleeve Shirt",
+      price: "336,19",
     },
     {
       id: 6,
