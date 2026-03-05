@@ -1,8 +1,7 @@
 import * as imgModel from "../models/imgModel.js";
 
 export const uploadCamisaPremium = (req, res) => {
-    const conteudo = req
-    const upload = imgModel.uploadCamisaPremium(conteudo);
+    const upload = imgModel.uploadCamisaPremium();
     upload(req, res, (err) => {
         if (err) {
             console.error("Error uploading image:", err);
