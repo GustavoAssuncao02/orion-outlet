@@ -1,0 +1,59 @@
+.shirt-container {
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.shirt-images {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.thumbnails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.thumbnail {
+  width: 70px;
+  cursor: pointer;
+}
+
+.main-image img {
+  width: 300px;
+  object-fit: cover;
+}
+
+.shirt-details {
+  max-width: 400px;
+}
+
+.price {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.color-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+}
+
+.qty-input {
+  width: 50px;
+  margin-right: 1rem;
+}
+
+.add-button {
+  background-color: #8dc63f;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}

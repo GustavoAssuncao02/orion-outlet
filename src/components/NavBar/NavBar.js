@@ -73,7 +73,7 @@ Página inicial Orion Outlet, para mais informações, entre em contato com noss
         <div> 
           <Dropdown>
             <Dropdown.Toggle variant="light" className="navbar-category">
-              Categorias
+              Escolha o tamanho
             </Dropdown.Toggle>
             <Dropdown.Menu className="bg-dark">
               {dropdownOptions.map((option, index) => (
